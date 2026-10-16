@@ -1,0 +1,7130 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#ffb6d5"
+    >
+
+    <meta
+        name="description"
+        content="دنیای کوچولوی عشق آرش و نسا؛
+        پر از خاطره، قلب، لبخند و عشق."
+    >
+
+    <title>Arash & Nesa | Our Little Universe 💗</title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+
+        /* ========================================
+           PART 1
+           ARASH & NESA
+           GLOBAL DESIGN FOUNDATION
+        ======================================== */
+
+        :root {
+
+            --pink-50: #fff5fa;
+            --pink-100: #ffe5f0;
+            --pink-200: #ffc9df;
+            --pink-300: #ffa5cd;
+            --pink-400: #ff7db9;
+            --pink-500: #f6539c;
+            --pink-600: #e83e89;
+
+            --purple-100: #f1e6ff;
+            --purple-200: #dfc8ff;
+            --purple-400: #b78aff;
+            --purple-600: #8d5bd6;
+
+            --cream: #fffaf4;
+            --white: #ffffff;
+
+            --text-main: #673c59;
+            --text-soft: #a17491;
+
+            --shadow-pink:
+                0 12px 35px rgba(246, 83, 156, 0.15);
+
+            --shadow-soft:
+                0 8px 28px rgba(112, 68, 102, 0.08);
+
+            --radius-small: 14px;
+            --radius-medium: 24px;
+            --radius-large: 34px;
+
+            --transition:
+                0.35s cubic-bezier(.2,.8,.2,1);
+        }
+
+
+        /* RESET */
+
+        *,
+        *::before,
+        *::after {
+
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+        }
+
+
+        html {
+
+            scroll-behavior: smooth;
+            scroll-padding-top: 90px;
+
+        }
+
+
+        body {
+
+            min-height: 100vh;
+
+            font-family:
+                "Vazirmatn",
+                Tahoma,
+                sans-serif;
+
+            color: var(--text-main);
+
+            background:
+
+                radial-gradient(
+                    circle at 10% 10%,
+                    rgba(255, 201, 223, 0.45),
+                    transparent 32%
+                ),
+
+                radial-gradient(
+                    circle at 90% 25%,
+                    rgba(223, 200, 255, 0.42),
+                    transparent 30%
+                ),
+
+                linear-gradient(
+                    160deg,
+                    #fff8fc 0%,
+                    #fff4fa 48%,
+                    #fbf5ff 100%
+                );
+
+            overflow-x: hidden;
+
+            -webkit-tap-highlight-color:
+                transparent;
+
+        }
+
+
+        body::before {
+
+            content: "";
+
+            position: fixed;
+
+            inset: 0;
+
+            pointer-events: none;
+
+            z-index: -1;
+
+            opacity: 0.24;
+
+            background-image:
+
+                radial-gradient(
+                    #f5a8cb 0.7px,
+                    transparent 0.7px
+                );
+
+            background-size: 18px 18px;
+
+        }
+
+
+        button,
+        input {
+
+            font: inherit;
+
+        }
+
+
+        button {
+
+            cursor: pointer;
+
+            -webkit-tap-highlight-color:
+                transparent;
+
+        }
+
+
+        button:focus-visible,
+        a:focus-visible {
+
+            outline: 3px solid
+                var(--purple-400);
+
+            outline-offset: 4px;
+
+        }
+
+
+        a {
+
+            color: inherit;
+
+            text-decoration: none;
+
+        }
+
+
+        img {
+
+            max-width: 100%;
+
+            display: block;
+
+        }
+
+
+        ::selection {
+
+            color: #ffffff;
+
+            background: var(--pink-500);
+
+        }
+
+
+        /* ACCESSIBILITY */
+
+        .sr-only {
+
+            position: absolute;
+
+            width: 1px;
+            height: 1px;
+
+            padding: 0;
+            margin: -1px;
+
+            overflow: hidden;
+
+            clip: rect(0, 0, 0, 0);
+
+            white-space: nowrap;
+
+            border: 0;
+
+        }
+
+
+        /* GENERAL UTILITIES */
+
+        .container {
+
+            width: min(
+                1120px,
+                calc(100% - 36px)
+            );
+
+            margin-inline: auto;
+
+        }
+
+
+        .section {
+
+            padding-block: 80px;
+
+            position: relative;
+
+        }
+
+
+        .section-heading {
+
+            text-align: center;
+
+            margin-bottom: 35px;
+
+        }
+
+
+        .section-eyebrow {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 8px;
+
+            padding: 8px 16px;
+
+            margin-bottom: 15px;
+
+            border: 1px solid
+                rgba(246, 83, 156, 0.18);
+
+            border-radius: 999px;
+
+            background:
+                rgba(255,255,255,0.72);
+
+            color: var(--pink-600);
+
+            font-size: 0.85rem;
+
+        }
+
+
+        .section-title {
+
+            font-size:
+                clamp(1.7rem, 5vw, 3rem);
+
+            font-weight: 900;
+
+            line-height: 1.7;
+
+        }
+
+
+        .section-description {
+
+            max-width: 620px;
+
+            margin: 8px auto 0;
+
+            color: var(--text-soft);
+
+            line-height: 2;
+
+            font-size: 0.97rem;
+
+        }
+
+
+        .gradient-text {
+
+            color: var(--pink-500);
+
+            background:
+
+                linear-gradient(
+                    110deg,
+                    #ed4e99,
+                    #b77cff,
+                    #f6539c
+                );
+
+            background-clip: text;
+
+            -webkit-background-clip: text;
+
+            -webkit-text-fill-color:
+                transparent;
+
+        }
+
+
+        /* FLOATING DECORATIONS */
+
+        .floating-decoration {
+
+            position: fixed;
+
+            z-index: 0;
+
+            pointer-events: none;
+
+            opacity: 0.55;
+
+            user-select: none;
+
+            animation:
+                decorationFloat 6s ease-in-out infinite;
+
+        }
+
+
+        .decoration-one {
+
+            top: 16%;
+
+            right: 3%;
+
+            font-size: 28px;
+
+        }
+
+
+        .decoration-two {
+
+            top: 40%;
+
+            left: 3%;
+
+            font-size: 23px;
+
+            animation-delay: -2s;
+
+        }
+
+
+        .decoration-three {
+
+            bottom: 14%;
+
+            right: 5%;
+
+            font-size: 25px;
+
+            animation-delay: -4s;
+
+        }
+
+
+        @keyframes decorationFloat {
+
+            0%,
+            100% {
+
+                transform:
+                    translateY(0)
+                    rotate(-8deg);
+
+            }
+
+            50% {
+
+                transform:
+                    translateY(-16px)
+                    rotate(8deg);
+
+            }
+
+        }
+
+
+        /* ========================================
+           LOADING SCREEN
+        ======================================== */
+
+        .loading-screen {
+
+            position: fixed;
+
+            inset: 0;
+
+            z-index: 9999;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+            align-items: center;
+
+            gap: 18px;
+
+            background:
+
+                linear-gradient(
+                    145deg,
+                    #fff4fa,
+                    #f7edff
+                );
+
+            transition:
+                opacity 0.65s ease,
+                visibility 0.65s ease;
+
+        }
+
+
+        .loading-screen.hidden {
+
+            opacity: 0;
+
+            visibility: hidden;
+
+            pointer-events: none;
+
+        }
+
+
+        .loading-heart {
+
+            font-size: 64px;
+
+            animation:
+                loadingHeartbeat 1.1s infinite;
+
+        }
+
+
+        .loading-title {
+
+            font-size: 1.25rem;
+
+            font-weight: 900;
+
+            text-align: center;
+
+        }
+
+
+        .loading-subtitle {
+
+            color: var(--text-soft);
+
+            font-size: 0.9rem;
+
+        }
+
+
+        .loading-track {
+
+            width: 170px;
+
+            height: 6px;
+
+            overflow: hidden;
+
+            border-radius: 999px;
+
+            background: #f4d8e8;
+
+        }
+
+
+        .loading-progress {
+
+            width: 35%;
+
+            height: 100%;
+
+            border-radius: inherit;
+
+            background:
+
+                linear-gradient(
+                    90deg,
+                    var(--pink-400),
+                    var(--purple-400)
+                );
+
+            animation:
+                loadingProgress 1.4s ease-in-out infinite;
+
+        }
+
+
+        @keyframes loadingHeartbeat {
+
+            0%,
+            100% {
+
+                transform: scale(1);
+
+            }
+
+            15% {
+
+                transform: scale(1.16);
+
+            }
+
+            30% {
+
+                transform: scale(0.96);
+
+            }
+
+            45% {
+
+                transform: scale(1.12);
+
+            }
+
+        }
+
+
+        @keyframes loadingProgress {
+
+            0% {
+
+                transform: translateX(180px);
+
+            }
+
+            100% {
+
+                transform: translateX(-180px);
+
+            }
+
+        }
+
+
+        /* ========================================
+           MAIN APP
+        ======================================== */
+
+        .app {
+
+            opacity: 0;
+
+            visibility: hidden;
+
+            transition:
+                opacity 0.7s ease;
+
+        }
+
+
+        .app.ready {
+
+            opacity: 1;
+
+            visibility: visible;
+
+        }
+
+
+        /* ========================================
+           TOP NAVIGATION
+        ======================================== */
+
+        .topbar {
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 1000;
+
+            padding: 12px 0;
+
+            background:
+
+                rgba(
+                    255,
+                    249,
+                    253,
+                    0.84
+                );
+
+            backdrop-filter:
+                blur(18px);
+
+            -webkit-backdrop-filter:
+                blur(18px);
+
+            border-bottom:
+                1px solid
+                rgba(246, 83, 156, 0.10);
+
+        }
+
+
+        .topbar-inner {
+
+            width: min(
+                1120px,
+                calc(100% - 28px)
+            );
+
+            margin-inline: auto;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            gap: 16px;
+
+        }
+
+
+        .brand {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            flex-shrink: 0;
+
+        }
+
+
+        .brand-icon {
+
+            width: 44px;
+
+            height: 44px;
+
+            display: grid;
+
+            place-items: center;
+
+            border-radius: 16px;
+
+            background:
+
+                linear-gradient(
+                    145deg,
+                    #ffb3d3,
+                    #d7b8ff
+                );
+
+            box-shadow: var(--shadow-pink);
+
+            font-size: 23px;
+
+            transform: rotate(-6deg);
+
+        }
+
+
+        .brand-name {
+
+            font-size: 0.95rem;
+
+            font-weight: 900;
+
+            line-height: 1.5;
+
+        }
+
+
+        .brand-caption {
+
+            display: block;
+
+            font-size: 0.68rem;
+
+            font-weight: 500;
+
+            color: var(--text-soft);
+
+            direction: ltr;
+
+            text-align: right;
+
+        }
+
+
+        .nav-links {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 7px;
+
+        }
+
+
+        .nav-link {
+
+            padding: 9px 12px;
+
+            border-radius: 999px;
+
+            font-size: 0.84rem;
+
+            color: var(--text-soft);
+
+            transition: var(--transition);
+
+        }
+
+
+        .nav-link:hover {
+
+            background: var(--pink-100);
+
+            color: var(--pink-600);
+
+        }
+
+
+        .nav-heart {
+
+            width: 43px;
+
+            height: 43px;
+
+            border: none;
+
+            border-radius: 15px;
+
+            color: var(--pink-600);
+
+            background: var(--pink-100);
+
+            font-size: 20px;
+
+            transition: var(--transition);
+
+        }
+
+
+        .nav-heart:hover {
+
+            transform:
+                scale(1.08)
+                rotate(-8deg);
+
+        }
+
+
+        /* ========================================
+           BUTTON SYSTEM
+        ======================================== */
+
+        .btn {
+
+            min-height: 49px;
+
+            padding: 12px 23px;
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 9px;
+
+            border: none;
+
+            border-radius: 17px;
+
+            font-weight: 800;
+
+            font-size: 0.93rem;
+
+            transition: var(--transition);
+
+        }
+
+
+        .btn-primary {
+
+            color: white;
+
+            background:
+
+                linear-gradient(
+                    120deg,
+                    var(--pink-500),
+                    #fa80ba
+                );
+
+            box-shadow:
+                0 9px 24px
+                rgba(246, 83, 156, 0.23);
+
+        }
+
+
+        .btn-primary:hover {
+
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 13px 30px
+                rgba(246, 83, 156, 0.30);
+
+        }
+
+
+        .btn-secondary {
+
+            color: var(--pink-600);
+
+            background: white;
+
+            border: 1px solid
+                rgba(246, 83, 156, 0.18);
+
+            box-shadow: var(--shadow-soft);
+
+        }
+
+
+        .btn-secondary:hover {
+
+            background: var(--pink-50);
+
+            transform: translateY(-2px);
+
+        }
+
+
+        .btn:active {
+
+            transform: scale(0.97);
+
+        }
+
+
+        /* ========================================
+           HERO SECTION
+        ======================================== */
+
+        .hero {
+
+            min-height: 650px;
+
+            display: flex;
+
+            align-items: center;
+
+            padding-block: 80px 65px;
+
+            overflow: hidden;
+
+        }
+
+
+        .hero-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                1.08fr 0.92fr;
+
+            align-items: center;
+
+            gap: 50px;
+
+        }
+
+
+        .hero-content {
+
+            position: relative;
+
+            z-index: 2;
+
+        }
+
+
+        .hero-badge {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 9px;
+
+            padding: 10px 17px;
+
+            border-radius: 999px;
+
+            border: 1px solid
+                rgba(246, 83, 156, 0.18);
+
+            background:
+                rgba(255,255,255,0.82);
+
+            color: var(--pink-600);
+
+            font-size: 0.86rem;
+
+            font-weight: 700;
+
+            box-shadow: var(--shadow-soft);
+
+            animation:
+                fadeInUp 0.8s both;
+
+        }
+
+
+        .hero-title {
+
+            margin-top: 25px;
+
+            font-size:
+                clamp(2.3rem, 5.3vw, 4.4rem);
+
+            font-weight: 900;
+
+            line-height: 1.55;
+
+            letter-spacing: -1px;
+
+            animation:
+                fadeInUp 0.8s 0.1s both;
+
+        }
+
+
+        .hero-title .line-two {
+
+            display: block;
+
+        }
+
+
+        .hero-description {
+
+            max-width: 510px;
+
+            margin-top: 20px;
+
+            color: var(--text-soft);
+
+            font-size: 1.04rem;
+
+            line-height: 2.2;
+
+            animation:
+                fadeInUp 0.8s 0.2s both;
+
+        }
+
+
+        .hero-buttons {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+
+            margin-top: 30px;
+
+            animation:
+                fadeInUp 0.8s 0.3s both;
+
+        }
+
+
+        .hero-note {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 9px;
+
+            margin-top: 28px;
+
+            color: var(--text-soft);
+
+            font-size: 0.83rem;
+
+            animation:
+                fadeInUp 0.8s 0.4s both;
+
+        }
+
+
+        .hero-note-icon {
+
+            font-size: 19px;
+
+        }
+
+
+        /* HERO ART */
+
+        .hero-art {
+
+            min-height: 430px;
+
+            position: relative;
+
+            display: grid;
+
+            place-items: center;
+
+        }
+
+
+        .art-orbit {
+
+            position: absolute;
+
+            width: min(390px, 90vw);
+
+            aspect-ratio: 1;
+
+            border: 1px dashed
+                rgba(246, 83, 156, 0.32);
+
+            border-radius: 50%;
+
+            animation:
+                orbitSpin 35s linear infinite;
+
+        }
+
+
+        .art-orbit::before {
+
+            content: "✦";
+
+            position: absolute;
+
+            top: 15%;
+
+            right: 10%;
+
+            color: var(--purple-400);
+
+            font-size: 28px;
+
+        }
+
+
+        .art-orbit::after {
+
+            content: "♡";
+
+            position: absolute;
+
+            bottom: 13%;
+
+            left: 9%;
+
+            color: var(--pink-400);
+
+            font-size: 35px;
+
+        }
+
+
+        .art-glow {
+
+            position: absolute;
+
+            width: 280px;
+
+            height: 280px;
+
+            border-radius: 50%;
+
+            background:
+
+                radial-gradient(
+                    circle,
+                    rgba(255, 168, 207, 0.48),
+                    rgba(223, 200, 255, 0.20),
+                    transparent 70%
+                );
+
+            filter: blur(5px);
+
+        }
+
+
+        .hero-card {
+
+            position: relative;
+
+            z-index: 2;
+
+            width: min(315px, 78vw);
+
+            padding: 30px 25px;
+
+            border: 1px solid
+                rgba(255,255,255,0.95);
+
+            border-radius: 35px;
+
+            background:
+
+                linear-gradient(
+                    145deg,
+                    rgba(255,255,255,0.95),
+                    rgba(255,239,248,0.88)
+                );
+
+            box-shadow:
+
+                0 25px 70px
+                rgba(203, 126, 173, 0.18),
+
+                inset 0 1px 0
+                rgba(255,255,255,0.9);
+
+            text-align: center;
+
+            animation:
+                cardFloat 5s ease-in-out infinite;
+
+        }
+
+
+        .hero-card-top {
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 8px;
+
+            margin-bottom: 24px;
+
+        }
+
+
+        .mini-heart {
+
+            width: 33px;
+
+            height: 33px;
+
+            display: grid;
+
+            place-items: center;
+
+            border-radius: 12px;
+
+            background: var(--pink-100);
+
+            font-size: 17px;
+
+            animation:
+                tinyHeartbeat 2s infinite;
+
+        }
+
+
+        .mini-heart:nth-child(2) {
+
+            animation-delay: 0.3s;
+
+            background: var(--purple-100);
+
+        }
+
+
+        .mini-heart:nth-child(3) {
+
+            animation-delay: 0.6s;
+
+        }
+
+
+        .couple-illustration {
+
+            position: relative;
+
+            width: 190px;
+
+            height: 155px;
+
+            margin-inline: auto;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+        }
+
+
+        .character {
+
+            position: absolute;
+
+            width: 95px;
+
+            height: 112px;
+
+            display: grid;
+
+            place-items: center;
+
+            border-radius: 48% 48% 42% 42%;
+
+            box-shadow:
+                inset 0 -7px 0
+                rgba(0,0,0,0.035);
+
+            font-size: 65px;
+
+        }
+
+
+        .character-arash {
+
+            right: 4px;
+
+            transform: rotate(-9deg);
+
+            background:
+
+                linear-gradient(
+                    145deg,
+                    #d9c5ff,
+                    #b998ff
+                );
+
+        }
+
+
+        .character-nesa {
+
+            left: 4px;
+
+            transform: rotate(9deg);
+
+            background:
+
+                linear-gradient(
+                    145deg,
+                    #ffc9e1,
+                    #ff9bc8
+                );
+
+        }
+
+
+        .couple-heart {
+
+            position: absolute;
+
+            z-index: 3;
+
+            top: 5px;
+
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            font-size: 33px;
+
+            animation:
+                tinyHeartbeat 1.2s infinite;
+
+        }
+
+
+        .hero-card-title {
+
+            margin-top: 20px;
+
+            font-size: 1.4rem;
+
+            font-weight: 900;
+
+        }
+
+
+        .hero-card-subtitle {
+
+            margin-top: 6px;
+
+            color: var(--text-soft);
+
+            font-size: 0.85rem;
+
+        }
+
+
+        .hero-card-date {
+
+            display: inline-block;
+
+            margin-top: 18px;
+
+            padding: 8px 15px;
+
+            border-radius: 999px;
+
+            color: var(--pink-600);
+
+            background: var(--pink-100);
+
+            font-size: 0.83rem;
+
+            font-weight: 800;
+
+            direction: ltr;
+
+        }
+
+
+        .floating-sticker {
+
+            position: absolute;
+
+            z-index: 3;
+
+            display: grid;
+
+            place-items: center;
+
+            border-radius: 22px;
+
+            background:
+                rgba(255,255,255,0.9);
+
+            box-shadow: var(--shadow-pink);
+
+            animation:
+                stickerFloat 4s ease-in-out infinite;
+
+        }
+
+
+        .sticker-bear {
+
+            width: 67px;
+
+            height: 67px;
+
+            top: 40px;
+
+            right: 3px;
+
+            font-size: 36px;
+
+            transform: rotate(9deg);
+
+        }
+
+
+        .sticker-flower {
+
+            width: 58px;
+
+            height: 58px;
+
+            bottom: 37px;
+
+            left: 7px;
+
+            font-size: 31px;
+
+            animation-delay: -1.7s;
+
+        }
+
+
+        .sticker-star {
+
+            width: 48px;
+
+            height: 48px;
+
+            top: 105px;
+
+            left: 0;
+
+            border-radius: 17px;
+
+            font-size: 25px;
+
+            animation-delay: -2.3s;
+
+        }
+
+
+        .sticker-bow {
+
+            width: 53px;
+
+            height: 53px;
+
+            bottom: 70px;
+
+            right: 10px;
+
+            font-size: 27px;
+
+            animation-delay: -0.8s;
+
+        }
+
+
+        @keyframes orbitSpin {
+
+            to {
+
+                transform: rotate(360deg);
+
+            }
+
+        }
+
+
+        @keyframes cardFloat {
+
+            0%,
+            100% {
+
+                transform: translateY(0)
+                    rotate(0deg);
+
+            }
+
+            50% {
+
+                transform: translateY(-12px)
+                    rotate(1deg);
+
+            }
+
+        }
+
+
+        @keyframes tinyHeartbeat {
+
+            0%,
+            100% {
+
+                transform: scale(1);
+
+            }
+
+            50% {
+
+                transform: scale(1.12);
+
+            }
+
+        }
+
+
+        @keyframes stickerFloat {
+
+            0%,
+            100% {
+
+                translate: 0 0;
+
+            }
+
+            50% {
+
+                translate: 0 -12px;
+
+            }
+
+        }
+
+
+        @keyframes fadeInUp {
+
+            from {
+
+                opacity: 0;
+
+                transform: translateY(24px);
+
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform: translateY(0);
+
+            }
+
+        }
+
+
+        /* ========================================
+           QUICK LOVE STRIP
+        ======================================== */
+
+        .love-strip {
+
+            position: relative;
+
+            z-index: 2;
+
+            padding-block: 20px;
+
+            border-block: 1px solid
+                rgba(246, 83, 156, 0.10);
+
+            background:
+                rgba(255,255,255,0.53);
+
+        }
+
+
+        .love-strip-inner {
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            flex-wrap: wrap;
+
+            gap: 14px 28px;
+
+        }
+
+
+        .love-strip-item {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 9px;
+
+            color: var(--text-soft);
+
+            font-size: 0.9rem;
+
+            font-weight: 700;
+
+        }
+
+
+        .love-strip-item span:first-child {
+
+            font-size: 19px;
+
+        }
+
+
+        /* ========================================
+           RESPONSIVE DESIGN
+        ======================================== */
+
+        @media (max-width: 900px) {
+
+            .hero {
+
+                padding-block: 55px;
+
+                min-height: auto;
+
+            }
+
+
+            .hero-grid {
+
+                grid-template-columns: 1fr;
+
+                gap: 20px;
+
+            }
+
+
+            .hero-content {
+
+                text-align: center;
+
+            }
+
+
+            .hero-description {
+
+                margin-inline: auto;
+
+            }
+
+
+            .hero-buttons {
+
+                justify-content: center;
+
+            }
+
+
+            .hero-note {
+
+                justify-content: center;
+
+            }
+
+
+            .hero-art {
+
+                min-height: 410px;
+
+            }
+
+
+            .nav-links .nav-link {
+
+                display: none;
+
+            }
+
+        }
+
+
+        @media (max-width: 480px) {
+
+            .container {
+
+                width:
+                    calc(100% - 28px);
+
+            }
+
+
+            .section {
+
+                padding-block: 55px;
+
+            }
+
+
+            .brand-name {
+
+                font-size: 0.82rem;
+
+            }
+
+
+            .brand-caption {
+
+                font-size: 0.61rem;
+
+            }
+
+
+            .hero {
+
+                padding-top: 42px;
+
+            }
+
+
+            .hero-title {
+
+                font-size: 2.25rem;
+
+                letter-spacing: -0.7px;
+
+            }
+
+
+            .hero-description {
+
+                font-size: 0.94rem;
+
+                line-height: 2;
+
+            }
+
+
+            .hero-buttons {
+
+                gap: 9px;
+
+            }
+
+
+            .hero-buttons .btn {
+
+                width: 100%;
+
+            }
+
+
+            .hero-art {
+
+                min-height: 370px;
+
+            }
+
+
+            .art-orbit {
+
+                width: 310px;
+
+            }
+
+
+            .hero-card {
+
+                width: 285px;
+
+                padding: 25px 20px;
+
+            }
+
+
+            .sticker-bear {
+
+                right: 0;
+
+            }
+
+
+            .sticker-flower {
+
+                left: 0;
+
+            }
+
+
+            .love-strip-inner {
+
+                gap: 12px 18px;
+
+            }
+
+
+            .love-strip-item {
+
+                font-size: 0.79rem;
+
+            }
+
+        }
+
+
+        /* ========================================
+           REDUCED MOTION ACCESSIBILITY
+        ======================================== */
+
+        @media (prefers-reduced-motion: reduce) {
+
+            *,
+            *::before,
+            *::after {
+
+                animation-duration:
+                    0.01ms !important;
+
+                animation-iteration-count:
+                    1 !important;
+
+                scroll-behavior: auto !important;
+
+                transition-duration:
+                    0.01ms !important;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- LOADING SCREEN -->
+
+    <div
+        class="loading-screen"
+        id="loadingScreen"
+        aria-live="polite"
+    >
+
+        <div class="loading-heart">
+            💗
+        </div>
+
+        <div class="loading-title">
+            دنیای کوچولوی آرش و نسا 🎀
+        </div>
+
+        <div class="loading-subtitle">
+            داریم قلب‌هامونو آماده می‌کنیم...
+        </div>
+
+        <div class="loading-track">
+
+            <div class="loading-progress"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- FLOATING DECORATIONS -->
+
+    <div
+        class="floating-decoration decoration-one"
+        aria-hidden="true"
+    >
+        ✨
+    </div>
+
+    <div
+        class="floating-decoration decoration-two"
+        aria-hidden="true"
+    >
+        ♡
+    </div>
+
+    <div
+        class="floating-decoration decoration-three"
+        aria-hidden="true"
+    >
+        🌷
+    </div>
+
+
+    <!-- MAIN APPLICATION -->
+
+    <div class="app" id="app">
+
+
+        <!-- NAVIGATION -->
+
+        <header class="topbar">
+
+            <div class="topbar-inner">
+
+                <a
+                    class="brand"
+                    href="#home"
+                    aria-label="صفحه اصلی آرش و نسا"
+                >
+
+                    <div class="brand-icon">
+                        💗
+                    </div>
+
+                    <div>
+
+                        <div class="brand-name">
+                            دنیای آرش و نسا
+                        </div>
+
+                        <span class="brand-caption">
+                            OUR LITTLE UNIVERSE
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <nav
+                    class="nav-links"
+                    aria-label="منوی اصلی"
+                >
+
+                    <a
+                        class="nav-link"
+                        href="#home"
+                    >
+                        خونه‌ی ما 🏡
+                    </a>
+
+                    <a
+                        class="nav-link"
+                        href="#our-story"
+                    >
+                        قصه‌ی ما 💌
+                    </a>
+
+                    <a
+                        class="nav-link"
+                        href="#love-letter"
+                    >
+                        نامه‌ی عشق 💗
+                    </a>
+
+                    <button
+                        class="nav-heart"
+                        id="navHeartButton"
+                        type="button"
+                        aria-label="دکمه قلب"
+                    >
+                        ♡
+                    </button>
+
+                </nav>
+
+            </div>
+
+        </header>
+
+
+        <!-- HERO SECTION -->
+
+        <main>
+
+            <section
+                class="hero"
+                id="home"
+            >
+
+                <div class="container">
+
+                    <div class="hero-grid">
+
+
+                        <!-- HERO TEXT -->
+
+                        <div class="hero-content">
+
+                            <div class="hero-badge">
+
+                                <span>🎀</span>
+
+                                <span>
+                                    یه دنیای کوچولو برای دوتامون
+                                </span>
+
+                                <span>💗</span>
+
+                            </div>
+
+
+                            <h1 class="hero-title">
+
+                                یه سورپرایزی دارم برات
+
+                                <span class="line-two gradient-text">
+                                    عشقمممم! 🥹💗
+                                </span>
+
+                            </h1>
+
+
+                            <p class="hero-description">
+
+                                نسا جونم، خانومیِ من...
+
+                                اینجا یه دنیای کوچولوئه که
+                                برای تو ساخته شده؛
+
+                                یه گوشه‌ی صورتی و رؤیایی
+                                پر از عشق، خاطره،
+                                لبخند و چیزایی که
+                                قراره با هم کشفشون کنیم. 🎀
+
+                            </p>
+
+
+                            <div class="hero-buttons">
+
+                                <button
+                                    class="btn btn-primary"
+                                    id="startSurpriseButton"
+                                    type="button"
+                                >
+
+                                    <span>
+                                        سورپرایزمو ببین
+                                    </span>
+
+                                    <span aria-hidden="true">
+                                        💝
+                                    </span>
+
+                                </button>
+
+
+                                <a
+                                    class="btn btn-secondary"
+                                    href="#our-story"
+                                >
+
+                                    <span>
+                                        بریم قصه‌مونو ببینیم
+                                    </span>
+
+                                    <span aria-hidden="true">
+                                        🧸
+                                    </span>
+
+                                </a>
+
+                            </div>
+
+
+                            <div class="hero-note">
+
+                                <span class="hero-note-icon">
+                                    🌷
+                                </span>
+
+                                <span>
+                                    ساخته‌شده با کلی عشق،
+                                    مخصوص خانومیِ آرش
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- HERO ILLUSTRATION -->
+
+                        <div
+                            class="hero-art"
+                            aria-label="تصویر کارتونی و بامزه آرش و نسا"
+                        >
+
+                            <div class="art-orbit"></div>
+
+                            <div class="art-glow"></div>
+
+
+                            <div class="floating-sticker sticker-bear">
+                                🧸
+                            </div>
+
+                            <div class="floating-sticker sticker-flower">
+                                🌸
+                            </div>
+
+                            <div class="floating-sticker sticker-star">
+                                ✨
+                            </div>
+
+                            <div class="floating-sticker sticker-bow">
+                                🎀
+                            </div>
+
+
+                            <div class="hero-card">
+
+
+                                <div class="hero-card-top">
+
+                                    <div class="mini-heart">
+                                        💗
+                                    </div>
+
+                                    <div class="mini-heart">
+                                        💜
+                                    </div>
+
+                                    <div class="mini-heart">
+                                        💖
+                                    </div>
+
+                                </div>
+
+
+                                <div class="couple-illustration">
+
+                                    <div class="character character-arash">
+                                        🧑🏻‍🦱
+                                    </div>
+
+                                    <div class="character character-nesa">
+                                        👩🏻
+                                    </div>
+
+                                    <div class="couple-heart">
+                                        💞
+                                    </div>
+
+                                </div>
+
+
+                                <h2 class="hero-card-title">
+
+                                    Arash
+                                    <span class="gradient-text">
+                                        &
+                                    </span>
+                                    Nesa
+
+                                </h2>
+
+
+                                <p class="hero-card-subtitle">
+
+                                    دو تا قلب،
+                                    یه عالمه خاطره 🎀
+
+                                </p>
+
+
+                                <div class="hero-card-date">
+
+                                    24 MAY 2026
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- QUICK LOVE STRIP -->
+
+            <div class="love-strip">
+
+                <div
+                    class="container love-strip-inner"
+                >
+
+                    <div class="love-strip-item">
+
+                        <span>💗</span>
+
+                        <span>
+                            یه عالمه عشق
+                        </span>
+
+                    </div>
+
+
+                    <div class="love-strip-item">
+
+                        <span>🧸</span>
+
+                        <span>
+                            کلی گوگولی‌بازی
+                        </span>
+
+                    </div>
+
+
+                    <div class="love-strip-item">
+
+                        <span>🌙</span>
+
+                        <span>
+                            خاطره‌های قشنگ
+                        </span>
+
+                    </div>
+
+
+                    <div class="love-strip-item">
+
+                        <span>🎀</span>
+
+                        <span>
+                            فقط مال خودمون
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!--
+                END OF PART 1
+
+                DO NOT CLOSE THE BODY OR HTML HERE.
+
+                PART 2 WILL CONTINUE INSIDE THIS FILE.
+
+                KEEP EVERYTHING BELOW THIS COMMENT
+                WHEN ADDING THE NEXT PART.
+            -->
+
+
+        </main>
+
+    </div>
+
+
+    <!--
+        TEMPORARY LOADING SCRIPT
+
+        THIS SCRIPT WILL BE EXPANDED IN LATER PARTS.
+    -->
+
+    <script>
+
+        window.addEventListener(
+            "load",
+            function () {
+
+                const loadingScreen =
+                    document.getElementById(
+                        "loadingScreen"
+                    );
+
+                const app =
+                    document.getElementById(
+                        "app"
+                    );
+
+                setTimeout(
+                    function () {
+
+                        loadingScreen.classList.add(
+                            "hidden"
+                        );
+
+                        app.classList.add(
+                            "ready"
+                        );
+
+                    },
+                    650
+                );
+
+            }
+        );
+
+    </script>
+
+</body>
+
+</html>
+<!-- ==========================================
+     PART 2 — MAGICAL EFFECTS & ANIMATIONS
+     ARASH & NESA LOVE UNIVERSE
+========================================== -->
+
+<style>
+
+/* MAGIC BACKGROUND */
+
+.magic-background {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.magic-particle {
+    position: absolute;
+    bottom: -50px;
+    opacity: 0;
+    animation: magicRise linear forwards;
+    user-select: none;
+}
+
+@keyframes magicRise {
+    0% {
+        transform: translateY(0) rotate(0deg) scale(.6);
+        opacity: 0;
+    }
+
+    15% {
+        opacity: .8;
+    }
+
+    80% {
+        opacity: .7;
+    }
+
+    100% {
+        transform: translateY(-110vh) rotate(360deg) scale(1.3);
+        opacity: 0;
+    }
+}
+
+
+/* SPARKLE LAYER */
+
+.sparkle-layer {
+    position: fixed;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.sparkle {
+    position: absolute;
+    color: white;
+    text-shadow: 0 0 12px #ff83c0;
+    animation: sparkleTwinkle 2.5s ease-in-out infinite;
+}
+
+@keyframes sparkleTwinkle {
+    0%, 100% {
+        opacity: .2;
+        transform: scale(.65) rotate(0deg);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.3) rotate(45deg);
+    }
+}
+
+
+/* GLASS CARD SYSTEM */
+
+.glass-card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,.85);
+    border-radius: 28px;
+    background: rgba(255,255,255,.68);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    box-shadow:
+        0 18px 45px rgba(208,117,171,.10),
+        inset 0 1px 0 rgba(255,255,255,.8);
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-6px);
+    box-shadow:
+        0 24px 55px rgba(208,117,171,.17),
+        inset 0 1px 0 rgba(255,255,255,.9);
+}
+
+.glass-card::before {
+    content: "";
+    position: absolute;
+    top: -80%;
+    left: -100%;
+    width: 60%;
+    height: 250%;
+    transform: rotate(25deg);
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.5),
+        transparent
+    );
+    transition: left .8s ease;
+    pointer-events: none;
+}
+
+.glass-card:hover::before {
+    left: 150%;
+}
+
+
+/* EXTRA HEART BUTTON */
+
+.magic-heart-button {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 1001;
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgba(255,255,255,.8);
+    border-radius: 22px;
+    background: linear-gradient(145deg,#ffb4d5,#ed78b6);
+    color: white;
+    font-size: 27px;
+    box-shadow: 0 12px 30px rgba(246,83,156,.3);
+    transition: transform .25s ease;
+}
+
+.magic-heart-button:hover {
+    transform: scale(1.1) rotate(-8deg);
+}
+
+.magic-heart-button:active {
+    transform: scale(.92);
+}
+
+
+/* HEART BURST */
+
+.heart-burst {
+    position: fixed;
+    z-index: 9998;
+    pointer-events: none;
+    font-size: 23px;
+    animation: heartBurst .95s ease-out forwards;
+}
+
+@keyframes heartBurst {
+    0% {
+        transform: translate(0,0) scale(.3) rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform:
+            translate(var(--burst-x),var(--burst-y))
+            scale(1.3)
+            rotate(var(--burst-rotate));
+        opacity: 0;
+    }
+}
+
+
+/* SCROLL PROGRESS */
+
+.scroll-progress-track {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 4px;
+    z-index: 2000;
+    background: transparent;
+    pointer-events: none;
+}
+
+.scroll-progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(
+        90deg,
+        #ff8fc4,
+        #c4a1ff,
+        #ff5da7
+    );
+    box-shadow: 0 0 12px rgba(255,93,167,.5);
+    transition: width .1s linear;
+}
+
+
+/* LOVE TOAST */
+
+.love-toast {
+    position: fixed;
+    z-index: 10000;
+    left: 50%;
+    bottom: 95px;
+    width: max-content;
+    max-width: calc(100% - 32px);
+    padding: 14px 20px;
+    border: 1px solid rgba(255,255,255,.9);
+    border-radius: 20px;
+    background: rgba(255,255,255,.94);
+    box-shadow: 0 12px 35px rgba(184,92,147,.2);
+    color: #b63e7d;
+    text-align: center;
+    font-size: .9rem;
+    font-weight: 800;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%,20px);
+    transition: .3s ease;
+}
+
+.love-toast.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%,0);
+}
+
+
+/* SECTION DIVIDER */
+
+.love-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    margin: 35px auto;
+    color: #f078b2;
+    font-size: 19px;
+}
+
+.love-divider::before,
+.love-divider::after {
+    content: "";
+    width: min(90px,18vw);
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #f3b0d1
+    );
+}
+
+.love-divider::after {
+    transform: rotate(180deg);
+}
+
+
+/* HOVER TILT */
+
+.tilt-card {
+    transform-style: preserve-3d;
+    transition: transform .25s ease;
+}
+
+
+/* MOBILE OPTIMIZATION */
+
+@media (max-width: 600px) {
+    .magic-heart-button {
+        width: 52px;
+        height: 52px;
+        left: 14px;
+        bottom: 14px;
+        border-radius: 18px;
+    }
+
+    .love-toast {
+        bottom: 78px;
+        font-size: .82rem;
+    }
+
+    .glass-card:hover {
+        transform: none;
+    }
+}
+
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+    .magic-particle,
+    .sparkle,
+    .heart-burst {
+        animation: none !important;
+    }
+}
+
+</style>
+
+
+<!-- MAGIC EFFECT ELEMENTS -->
+
+<div
+    class="magic-background"
+    id="magicBackground"
+    aria-hidden="true"
+></div>
+
+<div
+    class="sparkle-layer"
+    id="sparkleLayer"
+    aria-hidden="true"
+></div>
+
+<div class="scroll-progress-track" aria-hidden="true">
+    <div
+        class="scroll-progress-bar"
+        id="scrollProgressBar"
+    ></div>
+</div>
+
+<button
+    class="magic-heart-button"
+    id="magicHeartButton"
+    type="button"
+    aria-label="فرستادن قلب جادویی"
+    title="یه عالمه قلب برای نسا"
+>
+    💗
+</button>
+
+<div
+    class="love-toast"
+    id="loveToast"
+    role="status"
+    aria-live="polite"
+></div>
+
+
+<script>
+
+/* ==========================================
+   MAGICAL INTERACTIONS
+========================================== */
+
+(function () {
+    "use strict";
+
+    const prefersReducedMotion =
+        window.matchMedia(
+            "(prefers-reduced-motion: reduce)"
+        ).matches;
+
+    const magicBackground =
+        document.getElementById("magicBackground");
+
+    const sparkleLayer =
+        document.getElementById("sparkleLayer");
+
+    const heartButton =
+        document.getElementById("magicHeartButton");
+
+    const toast =
+        document.getElementById("loveToast");
+
+    const progressBar =
+        document.getElementById("scrollProgressBar");
+
+
+    /* FLOATING PARTICLES */
+
+    const particleSymbols = [
+        "💗",
+        "♡",
+        "💕",
+        "✧",
+        "🎀",
+        "✨",
+        "🌸"
+    ];
+
+    function createFloatingParticle() {
+        if (!magicBackground || prefersReducedMotion) {
+            return;
+        }
+
+        const particle =
+            document.createElement("span");
+
+        particle.className = "magic-particle";
+
+        particle.textContent =
+            particleSymbols[
+                Math.floor(
+                    Math.random() *
+                    particleSymbols.length
+                )
+            ];
+
+        particle.style.left =
+            Math.random() * 100 + "%";
+
+        particle.style.fontSize =
+            (12 + Math.random() * 17) + "px";
+
+        const duration =
+            9 + Math.random() * 9;
+
+        particle.style.animationDuration =
+            duration + "s";
+
+        magicBackground.appendChild(particle);
+
+        window.setTimeout(function () {
+            particle.remove();
+        }, duration * 1000 + 200);
+    }
+
+
+    /* SPARKLES */
+
+    function createSparkle() {
+        if (!sparkleLayer || prefersReducedMotion) {
+            return;
+        }
+
+        const sparkle =
+            document.createElement("span");
+
+        sparkle.className = "sparkle";
+        sparkle.textContent = "✦";
+
+        sparkle.style.left =
+            Math.random() * 100 + "%";
+
+        sparkle.style.top =
+            Math.random() * 100 + "%";
+
+        sparkle.style.fontSize =
+            (9 + Math.random() * 15) + "px";
+
+        sparkle.style.animationDelay =
+            Math.random() * 2 + "s";
+
+        sparkleLayer.appendChild(sparkle);
+
+        window.setTimeout(function () {
+            sparkle.remove();
+        }, 7000);
+    }
+
+
+    /* TOAST NOTIFICATION */
+
+    let toastTimer;
+
+    function showLoveToast(message) {
+        if (!toast) {
+            return;
+        }
+
+        toast.textContent = message;
+
+        toast.classList.add("visible");
+
+        window.clearTimeout(toastTimer);
+
+        toastTimer = window.setTimeout(function () {
+            toast.classList.remove("visible");
+        }, 2600);
+    }
+
+
+    /* HEART BURST */
+
+    function createHeartBurst(x, y) {
+        if (prefersReducedMotion) {
+            return;
+        }
+
+        const burstSymbols = [
+            "💗",
+            "💖",
+            "💕",
+            "💞",
+            "♡"
+        ];
+
+        for (let i = 0; i < 9; i++) {
+            const heart =
+                document.createElement("span");
+
+            heart.className = "heart-burst";
+
+            heart.textContent =
+                burstSymbols[
+                    Math.floor(
+                        Math.random() *
+                        burstSymbols.length
+                    )
+                ];
+
+            heart.style.left = x + "px";
+            heart.style.top = y + "px";
+
+            const angle =
+                (Math.PI * 2 * i) / 9;
+
+            const distance =
+                45 + Math.random() * 65;
+
+            heart.style.setProperty(
+                "--burst-x",
+                Math.cos(angle) * distance + "px"
+            );
+
+            heart.style.setProperty(
+                "--burst-y",
+                Math.sin(angle) * distance + "px"
+            );
+
+            heart.style.setProperty(
+                "--burst-rotate",
+                (Math.random() * 100 - 50) + "deg"
+            );
+
+            document.body.appendChild(heart);
+
+            window.setTimeout(function () {
+                heart.remove();
+            }, 1100);
+        }
+    }
+
+
+    /* LOVE MESSAGES */
+
+    const loveMessages = [
+        "نسا جونم، این همه قلب تقدیم به تو! 💗",
+        "خانومی، امیدوارم الان لبخند زده باشی! 🎀",
+        "یه عالمه بوس مجازی برای نسا! 💋",
+        "این گوشه‌ی کوچولو مخصوص توئه! 🧸",
+        "عشقم، توی این دنیا کلی چیز قشنگ هست! 🌸",
+        "یه قلب صورتی برای یه آدم دوست‌داشتنی! 💖",
+        "نسا جونم، برو بقیه‌ی سورپرایز رو هم ببین! ✨",
+        "اینم یه بغل مجازی پر از مهربونی! 🫂",
+        "دنیای ما پر از رنگ‌های قشنگه! 🌷",
+        "خانومی، اینم یه قلب اضافه! 💞"
+    ];
+
+    let lastMessageIndex = -1;
+
+    function getRandomLoveMessage() {
+        if (loveMessages.length === 1) {
+            return loveMessages[0];
+        }
+
+        let index;
+
+        do {
+            index = Math.floor(
+                Math.random() * loveMessages.length
+            );
+        } while (index === lastMessageIndex);
+
+        lastMessageIndex = index;
+
+        return loveMessages[index];
+    }
+
+
+    /* HEART BUTTON */
+
+    if (heartButton) {
+        heartButton.addEventListener(
+            "click",
+            function (event) {
+                createHeartBurst(
+                    event.clientX,
+                    event.clientY
+                );
+
+                showLoveToast(
+                    getRandomLoveMessage()
+                );
+            }
+        );
+    }
+
+
+    /* CLICK HEART EFFECT */
+
+    document.addEventListener(
+        "click",
+        function (event) {
+            const target = event.target;
+
+            if (!(target instanceof Element)) {
+                return;
+            }
+
+            const interactive =
+                target.closest(
+                    "button, a, input, textarea, select"
+                );
+
+            if (interactive) {
+                return;
+            }
+
+            createHeartBurst(
+                event.clientX,
+                event.clientY
+            );
+        }
+    );
+
+
+    /* SCROLL PROGRESS */
+
+    function updateScrollProgress() {
+        if (!progressBar) {
+            return;
+        }
+
+        const scrollableHeight =
+            document.documentElement.scrollHeight -
+            window.innerHeight;
+
+        const scrollTop =
+            window.scrollY ||
+            document.documentElement.scrollTop;
+
+        const percentage =
+            scrollableHeight > 0
+                ? (scrollTop / scrollableHeight) * 100
+                : 0;
+
+        progressBar.style.width =
+            Math.min(100, Math.max(0, percentage)) + "%";
+    }
+
+    window.addEventListener(
+        "scroll",
+        updateScrollProgress,
+        { passive: true }
+    );
+
+    updateScrollProgress();
+
+
+    /* NAVIGATION HEART */
+
+    const navHeart =
+        document.getElementById("navHeartButton");
+
+    if (navHeart) {
+        navHeart.addEventListener(
+            "click",
+            function () {
+                createHeartBurst(
+                    window.innerWidth / 2,
+                    100
+                );
+
+                showLoveToast(
+                    getRandomLoveMessage()
+                );
+            }
+        );
+    }
+
+
+    /* INITIAL ANIMATIONS */
+
+    if (!prefersReducedMotion) {
+        for (let i = 0; i < 10; i++) {
+            window.setTimeout(
+                createFloatingParticle,
+                i * 350
+            );
+        }
+
+        for (let i = 0; i < 18; i++) {
+            createSparkle();
+        }
+
+        window.setInterval(
+            createFloatingParticle,
+            1100
+        );
+
+        window.setInterval(
+            createSparkle,
+            1600
+        );
+    }
+
+
+    /* EXPOSE SMALL HELPERS FOR LATER PARTS */
+
+    window.NesaLoveEffects = {
+        showToast: showLoveToast,
+        heartBurst: createHeartBurst,
+        randomMessage: getRandomLoveMessage
+    };
+
+})();
+
+</script>
+
+<!-- END OF PART 2 -->
+<!-- ==========================================
+     PART 3 — OUR STORY & LOVE LETTER
+     ARASH + NESA
+========================================== -->
+
+<style>
+
+/* STORY SECTION */
+
+.story-section {
+    padding: 85px 0;
+    position: relative;
+}
+
+.story-intro {
+    max-width: 720px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.story-label {
+    display: inline-block;
+    padding: 8px 17px;
+    margin-bottom: 15px;
+    border-radius: 100px;
+    color: #e84f99;
+    background: #ffe7f2;
+    font-size: .88rem;
+    font-weight: 800;
+}
+
+.story-main-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    line-height: 1.7;
+    font-weight: 900;
+}
+
+.story-intro-text {
+    margin-top: 12px;
+    color: #a17491;
+    line-height: 2.1;
+}
+
+
+/* LOVE COUNTER */
+
+.counter-wrapper {
+    position: relative;
+    max-width: 950px;
+    margin: 0 auto 65px;
+    padding: 35px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,.9);
+    border-radius: 35px;
+    background:
+        linear-gradient(135deg,
+            rgba(255,255,255,.92),
+            rgba(255,231,244,.86),
+            rgba(241,230,255,.8)
+        );
+    box-shadow: 0 22px 60px rgba(211,117,171,.13);
+}
+
+.counter-wrapper::before {
+    content: "♡";
+    position: absolute;
+    left: 25px;
+    top: -25px;
+    color: rgba(246,83,156,.1);
+    font-size: 150px;
+    transform: rotate(-15deg);
+}
+
+.counter-header {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.counter-header h3 {
+    font-size: clamp(1.2rem, 4vw, 1.7rem);
+    font-weight: 900;
+}
+
+.counter-header p {
+    margin-top: 8px;
+    color: #a17491;
+    font-size: .92rem;
+}
+
+.counter-date {
+    margin-top: 22px;
+    color: #e84f99;
+    font-size: 1rem;
+    font-weight: 900;
+    direction: ltr;
+}
+
+.counter-grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 30px;
+}
+
+.counter-box {
+    min-width: 0;
+    padding: 20px 10px;
+    text-align: center;
+    border: 1px solid rgba(246,83,156,.1);
+    border-radius: 23px;
+    background: rgba(255,255,255,.8);
+}
+
+.counter-number {
+    display: block;
+    color: #e84f99;
+    font-size: clamp(1.7rem, 4vw, 2.5rem);
+    font-weight: 900;
+    line-height: 1.4;
+    direction: ltr;
+    font-variant-numeric: tabular-nums;
+}
+
+.counter-unit {
+    display: block;
+    margin-top: 5px;
+    color: #a17491;
+    font-size: .84rem;
+}
+
+.counter-footer {
+    position: relative;
+    z-index: 1;
+    margin-top: 23px;
+    text-align: center;
+    color: #956580;
+    font-size: .92rem;
+    line-height: 2;
+}
+
+
+/* MEMORY CARDS */
+
+.memory-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.memory-card {
+    position: relative;
+    min-width: 0;
+    padding: 28px 23px;
+    border: 1px solid rgba(255,255,255,.9);
+    border-radius: 28px;
+    background: rgba(255,255,255,.78);
+    box-shadow: 0 14px 40px rgba(198,126,169,.09);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.memory-card:hover {
+    transform: translateY(-7px) rotate(-.5deg);
+    box-shadow: 0 22px 45px rgba(198,126,169,.15);
+}
+
+.memory-icon {
+    width: 65px;
+    height: 65px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 20px;
+    border-radius: 22px;
+    background: linear-gradient(145deg,#ffe0ed,#f1e5ff);
+    font-size: 31px;
+}
+
+.memory-card h3 {
+    font-size: 1.1rem;
+    font-weight: 900;
+    line-height: 1.8;
+}
+
+.memory-card p {
+    margin-top: 10px;
+    color: #a17491;
+    font-size: .9rem;
+    line-height: 2.1;
+}
+
+.memory-number {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #f2c2da;
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+
+/* TIMELINE */
+
+.timeline {
+    position: relative;
+    max-width: 790px;
+    margin: 45px auto 0;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    right: 23px;
+    width: 2px;
+    background: linear-gradient(
+        to bottom,
+        #ffacd1,
+        #d5b7ff,
+        #ffc1dc
+    );
+}
+
+.timeline-item {
+    position: relative;
+    padding: 0 65px 35px 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    top: 5px;
+    right: 11px;
+    width: 26px;
+    height: 26px;
+    display: grid;
+    place-items: center;
+    border: 4px solid white;
+    border-radius: 50%;
+    background: #f27bb4;
+    box-shadow: 0 0 0 3px #ffe0ee;
+}
+
+.timeline-card {
+    padding: 23px;
+    border: 1px solid rgba(255,255,255,.95);
+    border-radius: 24px;
+    background: rgba(255,255,255,.8);
+    box-shadow: 0 12px 35px rgba(198,126,169,.08);
+}
+
+.timeline-date {
+    color: #e84f99;
+    font-size: .8rem;
+    font-weight: 900;
+}
+
+.timeline-card h3 {
+    margin-top: 8px;
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+.timeline-card p {
+    margin-top: 8px;
+    color: #a17491;
+    font-size: .9rem;
+    line-height: 2;
+}
+
+
+/* LOVE LETTER */
+
+.letter-section {
+    padding: 85px 0;
+    overflow: hidden;
+}
+
+.letter-stage {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.letter-envelope {
+    position: relative;
+    width: min(340px, 85vw);
+    height: 225px;
+    margin: 40px auto 25px;
+    perspective: 900px;
+}
+
+.envelope-back {
+    position: absolute;
+    inset: 0;
+    border-radius: 18px;
+    background: linear-gradient(145deg,#ffb6d6,#ff8fc2);
+    box-shadow: 0 22px 45px rgba(226,107,166,.2);
+}
+
+.envelope-paper {
+    position: absolute;
+    top: 13px;
+    left: 12px;
+    right: 12px;
+    height: 195px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 13px;
+    background: #fffdfb;
+    transition: transform .65s ease;
+}
+
+.envelope-paper span {
+    font-size: 39px;
+}
+
+.envelope-paper strong {
+    color: #d84b90;
+    font-size: 1.05rem;
+}
+
+.envelope-paper small {
+    color: #a17491;
+}
+
+.envelope-flap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: calc(min(340px, 85vw) / 2) solid transparent;
+    border-right: calc(min(340px, 85vw) / 2) solid transparent;
+    border-top: 130px solid #ffcae0;
+    transform-origin: top center;
+    transition: transform .55s ease, opacity .35s ease;
+    z-index: 3;
+    filter: drop-shadow(0 3px 2px rgba(191,80,133,.08));
+}
+
+.envelope-front {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    border-radius: 18px;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.envelope-front::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: calc(min(340px, 85vw) / 2) solid #ffb0d2;
+    border-top: 125px solid transparent;
+    border-bottom: 0 solid transparent;
+}
+
+.envelope-front::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-right: calc(min(340px, 85vw) / 2) solid #ff9fca;
+    border-top: 125px solid transparent;
+    border-bottom: 0 solid transparent;
+}
+
+.envelope-seal {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    top: 48%;
+    transform: translate(-50%,-50%);
+    width: 55px;
+    height: 55px;
+    display: grid;
+    place-items: center;
+    border: 4px solid #fff0f7;
+    border-radius: 50%;
+    background: #e95499;
+    color: white;
+    font-size: 25px;
+    box-shadow: 0 7px 20px rgba(193,66,126,.2);
+    transition: opacity .25s ease, transform .25s ease;
+}
+
+.letter-envelope.open .envelope-flap {
+    transform: rotateX(180deg);
+    opacity: .4;
+}
+
+.letter-envelope.open .envelope-paper {
+    transform: translateY(-110px);
+}
+
+.letter-envelope.open .envelope-seal {
+    opacity: 0;
+    transform: translate(-50%,-50%) scale(.3);
+}
+
+.letter-hint {
+    color: #a17491;
+    font-size: .86rem;
+    margin-bottom: 20px;
+}
+
+.letter-content {
+    max-width: 650px;
+    margin: 30px auto 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    border: 0 solid rgba(246,83,156,.12);
+    border-radius: 28px;
+    background: rgba(255,255,255,.85);
+    box-shadow: 0 18px 45px rgba(198,126,169,.08);
+    transition:
+        max-height .8s ease,
+        opacity .5s ease,
+        padding .5s ease;
+}
+
+.letter-content.open {
+    max-height: 1600px;
+    padding: 30px;
+    opacity: 1;
+    border-width: 1px;
+}
+
+.letter-paper-title {
+    margin-bottom: 20px;
+    color: #e84f99;
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+
+.letter-body {
+    color: #80546f;
+    text-align: right;
+    font-size: .96rem;
+    line-height: 2.5;
+    white-space: pre-line;
+}
+
+.letter-signature {
+    margin-top: 25px;
+    color: #e84f99;
+    font-size: 1.15rem;
+    font-weight: 900;
+    text-align: left;
+}
+
+
+/* LOVE BUTTONS */
+
+.story-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.story-action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 47px;
+    padding: 12px 20px;
+    border: 1px solid rgba(246,83,156,.15);
+    border-radius: 16px;
+    background: white;
+    color: #d84b90;
+    font-size: .88rem;
+    font-weight: 800;
+    transition: .25s ease;
+}
+
+.story-action-btn:hover {
+    background: #fff0f7;
+    transform: translateY(-3px);
+}
+
+
+/* REVEAL ANIMATION */
+
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity .7s ease, transform .7s ease;
+}
+
+.reveal-on-scroll.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 760px) {
+    .counter-wrapper {
+        padding: 27px 17px;
+    }
+
+    .counter-grid {
+        grid-template-columns: repeat(2, minmax(0,1fr));
+        gap: 10px;
+    }
+
+    .memory-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .memory-card {
+        padding: 23px;
+    }
+
+    .story-section,
+    .letter-section {
+        padding: 60px 0;
+    }
+
+    .timeline::before {
+        right: 17px;
+    }
+
+    .timeline-item {
+        padding-right: 49px;
+        padding-bottom: 25px;
+    }
+
+    .timeline-dot {
+        right: 5px;
+    }
+
+    .letter-content.open {
+        padding: 23px 18px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal-on-scroll {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+</style>
+
+
+<!-- ==========================================
+     OUR STORY
+========================================== -->
+
+<section class="story-section" id="our-story">
+
+    <div class="container">
+
+        <div class="story-intro reveal-on-scroll">
+
+            <span class="story-label">
+                📖 فصل قشنگ زندگی ما
+            </span>
+
+            <h2 class="story-main-title">
+                قصه‌ی <span class="gradient-text">آرش و نسا</span>
+            </h2>
+
+            <p class="story-intro-text">
+                بعضی آدما میان توی زندگی‌مون و
+                یه عالمه لحظه‌ی قشنگ می‌سازن.
+                این صفحه برای ثبت خاطرات،
+                لبخندها و روزهاییه که
+                دوست داریم همیشه یادمون بمونه. 💗
+            </p>
+
+        </div>
+
+
+        <!-- RELATIONSHIP COUNTER -->
+
+        <div class="counter-wrapper reveal-on-scroll">
+
+            <div class="counter-header">
+
+                <h3>
+                    💞 تقویم کوچولوی عشق ما
+                </h3>
+
+                <p>
+                    روزهایی که از تاریخ شروع رابطه گذشته
+                </p>
+
+                <div class="counter-date">
+                    15 MAY 2026
+                </div>
+
+            </div>
+
+
+            <div class="counter-grid">
+
+                <div class="counter-box">
+                    <span
+                        class="counter-number"
+                        id="loveDays"
+                    >--</span>
+
+                    <span class="counter-unit">
+                        روز
+                    </span>
+                </div>
+
+                <div class="counter-box">
+                    <span
+                        class="counter-number"
+                        id="loveHours"
+                    >--</span>
+
+                    <span class="counter-unit">
+                        ساعت
+                    </span>
+                </div>
+
+                <div class="counter-box">
+                    <span
+                        class="counter-number"
+                        id="loveMinutes"
+                    >--</span>
+
+                    <span class="counter-unit">
+                        دقیقه
+                    </span>
+                </div>
+
+                <div class="counter-box">
+                    <span
+                        class="counter-number"
+                        id="loveSeconds"
+                    >--</span>
+
+                    <span class="counter-unit">
+                        ثانیه
+                    </span>
+                </div>
+
+            </div>
+
+
+            <p class="counter-footer" id="counterMessage">
+                هر روز یه فرصت تازه برای ساختن خاطرات قشنگه. 🌷
+            </p>
+
+        </div>
+
+
+        <!-- MEMORY CARDS -->
+
+        <div class="section-heading reveal-on-scroll">
+
+            <span class="section-eyebrow">
+                🧸 تکه‌های کوچولوی خاطره
+            </span>
+
+            <h2 class="section-title">
+                چیزایی که <span class="gradient-text">قشنگن</span>
+            </h2>
+
+            <p class="section-description">
+                بعضی لحظه‌ها ساده‌ان، اما همین سادگی‌ها
+                می‌تونن تبدیل به دوست‌داشتنی‌ترین خاطره‌ها بشن.
+            </p>
+
+        </div>
+
+
+        <div class="memory-grid">
+
+            <article class="memory-card reveal-on-scroll">
+
+                <span class="memory-number">01</span>
+
+                <div class="memory-icon">💌</div>
+
+                <h3>اولین حرف‌های ما</h3>
+
+                <p>
+                    یه شروع کوچولو که می‌تونه
+                    سرآغاز هزاران خاطره‌ی قشنگ باشه.
+                    اینجا جای ثبت اولین خاطره‌مونه.
+                </p>
+
+            </article>
+
+
+            <article class="memory-card reveal-on-scroll">
+
+                <span class="memory-number">02</span>
+
+                <div class="memory-icon">🧸</div>
+
+                <h3>خنده‌های دونفره</h3>
+
+                <p>
+                    پیام‌های بامزه، شوخی‌های کوچولو
+                    و لحظه‌هایی که یه روز معمولی رو
+                    تبدیل به یه روز خاص می‌کنن.
+                </p>
+
+            </article>
+
+
+            <article class="memory-card reveal-on-scroll">
+
+                <span class="memory-number">03</span>
+
+                <div class="memory-icon">🌷</div>
+
+                <h3>خاطراتی که می‌سازیم</h3>
+
+                <p>
+                    این داستان هنوز ادامه داره.
+                    هر خاطره‌ی قشنگ تازه،
+                    می‌تونه صفحه‌ی جدیدی به قصه‌مون اضافه کنه.
+                </p>
+
+            </article>
+
+        </div>
+
+
+        <div class="love-divider" aria-hidden="true">
+            ♡ ✧ ♡
+        </div>
+
+
+        <!-- RELATIONSHIP TIMELINE -->
+
+        <div class="section-heading reveal-on-scroll">
+
+            <span class="section-eyebrow">
+                🌸 قدم‌به‌قدم
+            </span>
+
+            <h2 class="section-title">
+                خط زمانی <span class="gradient-text">ما</span>
+            </h2>
+
+            <p class="section-description">
+                یه مسیر برای ثبت لحظه‌های مهم و
+                روزهایی که دوست داریم فراموش نشن.
+            </p>
+
+        </div>
+
+
+        <div class="timeline">
+
+            <article class="timeline-item reveal-on-scroll">
+
+                <div class="timeline-dot">♡</div>
+
+                <div class="timeline-card">
+
+                    <div class="timeline-date">
+                        فصل اول
+                    </div>
+
+                    <h3>💌 شروع آشنایی</h3>
+
+                    <p>
+                        اینجا تاریخ و داستان اولین آشنایی‌مون
+                        رو بنویسیم؛ همون‌طوری که واقعاً اتفاق افتاد.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="timeline-item reveal-on-scroll">
+
+                <div class="timeline-dot">♡</div>
+
+                <div class="timeline-card">
+
+                    <div class="timeline-date">
+                        فصل دوم
+                    </div>
+
+                    <h3>🎀 اولین خاطره‌ی خاص</h3>
+
+                    <p>
+                        اولین پیام خاص، اولین شوخی به‌یادموندنی
+                        یا هر لحظه‌ای که برای هردومون مهم بوده.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="timeline-item reveal-on-scroll">
+
+                <div class="timeline-dot">♡</div>
+
+                <div class="timeline-card">
+
+                    <div class="timeline-date">
+                        فصل سوم
+                    </div>
+
+                    <h3>💗 پنج‌ماهگی ما</h3>
+
+                    <p>
+                        یه فرصت قشنگ برای مرور خاطرات گذشته،
+                        لبخند زدن و ساختن خاطره‌های تازه.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="timeline-item reveal-on-scroll">
+
+                <div class="timeline-dot">✦</div>
+
+                <div class="timeline-card">
+
+                    <div class="timeline-date">
+                        ادامه دارد...
+                    </div>
+
+                    <h3>🌙 فصل‌های بعدی</h3>
+
+                    <p>
+                        داستان زندگی پر از اتفاق‌های تازه‌ست.
+                        این قسمت برای خاطره‌هایی می‌مونه
+                        که هنوز فرصت ساختنشون رو داریم.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     LOVE LETTER
+========================================== -->
+
+<section
+    class="letter-section"
+    id="love-letter"
+>
+
+    <div class="container">
+
+        <div class="letter-stage">
+
+            <div class="section-heading reveal-on-scroll">
+
+                <span class="section-eyebrow">
+                    💌 یه نامه فقط برای تو
+                </span>
+
+                <h2 class="section-title">
+                    نامه‌ی مخفی <span class="gradient-text">نسا</span>
+                </h2>
+
+                <p class="section-description">
+                    خانومی، روی پاکت بزن تا نامه‌ی کوچولومون
+                    باز بشه. 🎀
+                </p>
+
+            </div>
+
+
+            <div
+                class="letter-envelope reveal-on-scroll"
+                id="letterEnvelope"
+            >
+
+                <div class="envelope-back"></div>
+
+                <div class="envelope-paper">
+
+                    <span>💌</span>
+
+                    <strong>
+                        برای نسا جونم
+                    </strong>
+
+                    <small>
+                        یه نامه از ته قلبم
+                    </small>
+
+                </div>
+
+                <div class="envelope-flap"></div>
+
+                <div class="envelope-front"></div>
+
+                <div class="envelope-seal">
+                    ♡
+                </div>
+
+            </div>
+
+
+            <p class="letter-hint" id="letterHint">
+                برای باز کردن نامه، روی پاکت بزن 💗
+            </p>
+
+
+            <div
+                class="story-actions"
+                id="letterActions"
+            >
+
+                <button
+                    class="story-action-btn"
+                    id="openLetterButton"
+                    type="button"
+                >
+                    💌 باز کردن نامه
+                </button>
+
+                <button
+                    class="story-action-btn"
+                    id="closeLetterButton"
+                    type="button"
+                    hidden
+                >
+                    🎀 بستن نامه
+                </button>
+
+            </div>
+
+
+            <article
+                class="letter-content"
+                id="letterContent"
+                aria-hidden="true"
+            >
+
+                <h3 class="letter-paper-title">
+                    برای خانومیِ دوست‌داشتنی 💗
+                </h3>
+
+                <div class="letter-body" id="letterBody">
+نسا جونم، خانومیِ قشنگم... 🎀
+
+خواستم یه گوشه از این دنیای کوچولو رو
+مخصوص تو بسازم؛ یه جایی پر از رنگ‌های
+صورتی، قلب‌های کوچولو و چیزایی که
+بتونن لبخند بیارن روی لبت.
+
+پنج ماه، بهونه‌ی قشنگیه برای اینکه
+یه لحظه وایسیم و به خاطراتی که ساختیم
+نگاه کنیم؛ به حرف‌هایی که زدیم،
+به خنده‌هایی که داشتیم و به لحظه‌هایی
+که برای خودمون خاص بودن.
+
+امیدوارم روزهای پیش رومون پر از
+مهربونی، آرامش، صداقت و خاطرات خوب باشن.
+امیدوارم همیشه بتونیم با هم حرف بزنیم،
+همدیگه رو بهتر بشناسیم و برای هم
+آدم‌های امن و مهربونی باشیم.
+
+این سایت یه هدیه‌ی کوچولوئه،
+اما پشتش کلی ذوق و فکر گذاشتم
+تا وقتی بازش می‌کنی، حس کنی
+یه چیز مخصوص خودته. 💗
+
+نسا جونم، امیدوارم لبخند بزنی
+و از دیدن این دنیای کوچولو لذت ببری.
+
+                </div>
+
+                <div class="letter-signature">
+                    با کلی ذوق، آرش 💗
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<script>
+
+/* ==========================================
+   PART 3 — INTERACTIVE LOGIC
+========================================== */
+
+(function () {
+    "use strict";
+
+    const $ = function (id) {
+        return document.getElementById(id);
+    };
+
+
+    /* RELATIONSHIP START DATE */
+
+    /*
+       IMPORTANT:
+       The exact start date must match your real
+       relationship date.
+
+       The default below is 15 May 2026.
+       Change it if your actual date is different.
+    */
+
+    const relationshipStart =
+        new Date(2026, 4, 15, 0, 0, 0);
+
+
+    function updateLoveCounter() {
+        const now = new Date();
+
+        const difference =
+            now.getTime() -
+            relationshipStart.getTime();
+
+        if (difference < 0) {
+            $("loveDays").textContent = "0";
+            $("loveHours").textContent = "0";
+            $("loveMinutes").textContent = "0";
+            $("loveSeconds").textContent = "0";
+
+            $("counterMessage").textContent =
+                "تاریخ شروع انتخاب‌شده هنوز نرسیده! 🌷";
+
+            return;
+        }
+
+        const totalSeconds =
+            Math.floor(difference / 1000);
+
+        const days =
+            Math.floor(totalSeconds / 86400);
+
+        const hours =
+            Math.floor((totalSeconds % 86400) / 3600);
+
+        const minutes =
+            Math.floor((totalSeconds % 3600) / 60);
+
+        const seconds =
+            totalSeconds % 60;
+
+        $("loveDays").textContent =
+            days.toLocaleString("en-US");
+
+        $("loveHours").textContent =
+            String(hours).padStart(2, "0");
+
+        $("loveMinutes").textContent =
+            String(minutes).padStart(2, "0");
+
+        $("loveSeconds").textContent =
+            String(seconds).padStart(2, "0");
+
+        $("counterMessage").textContent =
+            "هر روز یه فرصت تازه برای ساختن خاطرات قشنگه. 🌷";
+    }
+
+
+    updateLoveCounter();
+
+    window.setInterval(
+        updateLoveCounter,
+        1000
+    );
+
+
+    /* LETTER OPEN/CLOSE */
+
+    const envelope =
+        $("letterEnvelope");
+
+    const letter =
+        $("letterContent");
+
+    const openButton =
+        $("openLetterButton");
+
+    const closeButton =
+        $("closeLetterButton");
+
+    const hint =
+        $("letterHint");
+
+
+    function openLoveLetter() {
+        envelope.classList.add("open");
+
+        letter.classList.add("open");
+
+        letter.setAttribute(
+            "aria-hidden",
+            "false"
+        );
+
+        openButton.hidden = true;
+
+        closeButton.hidden = false;
+
+        hint.textContent =
+            "نامه‌ات باز شد، خانومی! 💗";
+
+        if (
+            window.NesaLoveEffects &&
+            window.NesaLoveEffects.showToast
+        ) {
+            window.NesaLoveEffects.showToast(
+                "این نامه مخصوص نسا جونمه! 💌"
+            );
+        }
+
+        window.setTimeout(function () {
+            letter.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            });
+        }, 350);
+    }
+
+
+    function closeLoveLetter() {
+        envelope.classList.remove("open");
+
+        letter.classList.remove("open");
+
+        letter.setAttribute(
+            "aria-hidden",
+            "true"
+        );
+
+        openButton.hidden = false;
+
+        closeButton.hidden = true;
+
+        hint.textContent =
+            "نامه دوباره توی پاکتش قرار گرفت. 🎀";
+    }
+
+
+    envelope.addEventListener(
+        "click",
+        function () {
+            if (letter.classList.contains("open")) {
+                closeLoveLetter();
+            } else {
+                openLoveLetter();
+            }
+        }
+    );
+
+
+    openButton.addEventListener(
+        "click",
+        openLoveLetter
+    );
+
+
+    closeButton.addEventListener(
+        "click",
+        closeLoveLetter
+    );
+
+
+    /* REVEAL ELEMENTS ON SCROLL */
+
+    const revealElements =
+        document.querySelectorAll(
+            ".reveal-on-scroll"
+        );
+
+    if ("IntersectionObserver" in window) {
+
+        const revealObserver =
+            new IntersectionObserver(
+                function (entries, observer) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add(
+                                "revealed"
+                            );
+
+                            observer.unobserve(
+                                entry.target
+                            );
+                        }
+                    });
+                },
+                {
+                    threshold: 0.12
+                }
+            );
+
+        revealElements.forEach(function (element) {
+            revealObserver.observe(element);
+        });
+
+    } else {
+
+        revealElements.forEach(function (element) {
+            element.classList.add("revealed");
+        });
+
+    }
+
+
+    /* CONNECT TO EXISTING EFFECTS */
+
+    document.querySelectorAll(
+        ".memory-card, .timeline-card"
+    ).forEach(function (card) {
+        card.addEventListener("click", function () {
+            if (
+                window.NesaLoveEffects &&
+                window.NesaLoveEffects.heartBurst
+            ) {
+                const rect =
+                    card.getBoundingClientRect();
+
+                window.NesaLoveEffects.heartBurst(
+                    rect.left + rect.width / 2,
+                    rect.top + rect.height / 2
+                );
+            }
+        });
+    });
+
+})();
+
+</script>
+
+<!-- END OF PART 3 -->
+<!-- ==========================================
+     PART 4 — GAMES & SURPRISES
+     ARASH + NESA LOVE UNIVERSE
+========================================== -->
+
+<style>
+
+/* GENERAL GAME SECTION */
+
+.fun-section {
+    padding: 80px 0;
+    position: relative;
+}
+
+.fun-heading {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.fun-eyebrow {
+    display: inline-block;
+    padding: 9px 17px;
+    margin-bottom: 15px;
+    border-radius: 999px;
+    color: #dc4d94;
+    background: #ffe6f2;
+    font-size: .85rem;
+    font-weight: 900;
+}
+
+.fun-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 900;
+    line-height: 1.7;
+}
+
+.fun-description {
+    margin-top: 12px;
+    color: #a17491;
+    line-height: 2.1;
+}
+
+
+/* SURPRISE GIFT */
+
+.gift-area {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.gift-card {
+    position: relative;
+    min-width: 0;
+    padding: 28px 20px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,.95);
+    border-radius: 30px;
+    background: rgba(255,255,255,.8);
+    box-shadow: 0 15px 40px rgba(198,126,169,.09);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.gift-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 23px 48px rgba(198,126,169,.16);
+}
+
+.gift-number {
+    position: absolute;
+    top: 17px;
+    right: 18px;
+    color: #eaa1c5;
+    font-size: .85rem;
+    font-weight: 900;
+}
+
+.gift-emoji {
+    display: block;
+    margin: 12px auto 18px;
+    font-size: 67px;
+    cursor: pointer;
+    transform-origin: center;
+    transition: transform .3s ease;
+}
+
+.gift-card:hover .gift-emoji {
+    transform: rotate(-8deg) scale(1.08);
+}
+
+.gift-card h3 {
+    font-size: 1.08rem;
+    font-weight: 900;
+}
+
+.gift-card p {
+    min-height: 48px;
+    margin-top: 10px;
+    color: #a17491;
+    font-size: .86rem;
+    line-height: 1.9;
+}
+
+.gift-open-button {
+    width: 100%;
+    min-height: 45px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 0;
+    border-radius: 15px;
+    background: linear-gradient(120deg,#ffafd1,#ffcde3);
+    color: #9c326c;
+    font-size: .88rem;
+    font-weight: 900;
+    transition: .25s ease;
+}
+
+.gift-open-button:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(120deg,#ff97c6,#ffc0dd);
+}
+
+.gift-open-button:disabled {
+    cursor: default;
+    opacity: .75;
+}
+
+
+/* GIFT REVEAL */
+
+.gift-result {
+    display: none;
+    margin-top: 20px;
+    padding: 17px;
+    border: 1px dashed #f4acd0;
+    border-radius: 19px;
+    background: #fff5fa;
+    color: #a13b75;
+    font-size: .9rem;
+    font-weight: 700;
+    line-height: 2;
+    animation: giftReveal .45s ease both;
+}
+
+.gift-result.visible {
+    display: block;
+}
+
+@keyframes giftReveal {
+    from {
+        opacity: 0;
+        transform: translateY(10px) scale(.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+/* GAME PANEL */
+
+.game-panel {
+    max-width: 850px;
+    margin: 65px auto 0;
+    padding: 35px;
+    border: 1px solid rgba(255,255,255,.95);
+    border-radius: 35px;
+    background: linear-gradient(
+        145deg,
+        rgba(255,255,255,.92),
+        rgba(255,239,248,.9)
+    );
+    box-shadow: 0 20px 55px rgba(198,126,169,.11);
+}
+
+.game-panel-header {
+    text-align: center;
+}
+
+.game-panel-header h3 {
+    font-size: clamp(1.35rem, 4vw, 1.9rem);
+    font-weight: 900;
+}
+
+.game-panel-header p {
+    margin-top: 10px;
+    color: #a17491;
+    font-size: .9rem;
+    line-height: 2;
+}
+
+.game-score {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    margin-top: 17px;
+    padding: 9px 16px;
+    border-radius: 999px;
+    background: #ffe7f2;
+    color: #d74790;
+    font-size: .88rem;
+    font-weight: 900;
+}
+
+
+/* LUCKY HEART GAME */
+
+.lucky-hearts {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+    max-width: 540px;
+    margin: 30px auto 0;
+}
+
+.lucky-heart {
+    min-height: 125px;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgba(246,83,156,.15);
+    border-radius: 25px;
+    background: linear-gradient(145deg,#fff,#fff0f7);
+    color: #ec72ad;
+    font-size: 42px;
+    box-shadow: 0 8px 20px rgba(198,126,169,.08);
+    transition: transform .25s ease, background .25s ease;
+}
+
+.lucky-heart:hover {
+    transform: translateY(-4px) rotate(-3deg);
+    background: #ffe2f0;
+}
+
+.lucky-heart:disabled {
+    cursor: default;
+    opacity: .9;
+}
+
+.lucky-heart.selected {
+    background: linear-gradient(145deg,#ffd5e8,#f0ddff);
+    border-color: #ed8fbd;
+}
+
+.lucky-heart.winner {
+    animation: luckyWinner .6s ease;
+}
+
+@keyframes luckyWinner {
+    0%,100% {
+        transform: scale(1);
+    }
+
+    45% {
+        transform: scale(1.14) rotate(7deg);
+    }
+}
+
+.game-result {
+    min-height: 55px;
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 20px;
+    background: rgba(255,255,255,.8);
+    color: #a13b75;
+    text-align: center;
+    font-size: .93rem;
+    font-weight: 800;
+    line-height: 2;
+}
+
+.game-controls {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.game-button {
+    min-height: 46px;
+    padding: 12px 20px;
+    border: 0;
+    border-radius: 15px;
+    background: linear-gradient(120deg,#f86cab,#ff9bc8);
+    color: white;
+    font-size: .88rem;
+    font-weight: 900;
+    box-shadow: 0 8px 20px rgba(246,83,156,.16);
+    transition: .25s ease;
+}
+
+.game-button:hover {
+    transform: translateY(-2px);
+}
+
+.game-button.secondary {
+    color: #a13b75;
+    background: #ffe6f2;
+    box-shadow: none;
+}
+
+
+/* QUIZ */
+
+.quiz-panel {
+    max-width: 760px;
+    margin: 60px auto 0;
+    padding: 32px;
+    border: 1px solid rgba(255,255,255,.95);
+    border-radius: 32px;
+    background: rgba(255,255,255,.82);
+    box-shadow: 0 18px 45px rgba(198,126,169,.1);
+}
+
+.quiz-progress {
+    height: 8px;
+    margin: 20px 0 28px;
+    overflow: hidden;
+    border-radius: 999px;
+    background: #f8e0ed;
+}
+
+.quiz-progress-bar {
+    width: 0%;
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg,#ff80b8,#b99aff);
+    transition: width .35s ease;
+}
+
+.quiz-question-number {
+    color: #e84f99;
+    font-size: .85rem;
+    font-weight: 900;
+}
+
+.quiz-question {
+    margin-top: 10px;
+    font-size: clamp(1.15rem, 4vw, 1.55rem);
+    font-weight: 900;
+    line-height: 1.8;
+}
+
+.quiz-options {
+    display: grid;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.quiz-option {
+    width: 100%;
+    padding: 15px 18px;
+    border: 1px solid #f5d5e6;
+    border-radius: 17px;
+    background: #fff9fc;
+    color: #85516f;
+    text-align: right;
+    font-size: .92rem;
+    font-weight: 700;
+    line-height: 1.8;
+    transition: .25s ease;
+}
+
+.quiz-option:hover:not(:disabled) {
+    border-color: #f19cc6;
+    background: #fff0f7;
+    transform: translateX(-3px);
+}
+
+.quiz-option:disabled {
+    cursor: default;
+}
+
+.quiz-option.correct {
+    border-color: #8bd5ac;
+    background: #edfff4;
+    color: #237c4b;
+}
+
+.quiz-option.incorrect {
+    border-color: #f2a2bb;
+    background: #fff0f4;
+    color: #b84169;
+}
+
+.quiz-feedback {
+    min-height: 48px;
+    margin-top: 18px;
+    color: #a17491;
+    font-size: .9rem;
+    line-height: 2;
+}
+
+.quiz-result-card {
+    display: none;
+    margin-top: 20px;
+    padding: 25px;
+    border-radius: 24px;
+    background: linear-gradient(145deg,#fff0f7,#f2eaff);
+    text-align: center;
+}
+
+.quiz-result-card.visible {
+    display: block;
+    animation: giftReveal .4s ease both;
+}
+
+.quiz-result-card h4 {
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+
+.quiz-result-card p {
+    margin-top: 10px;
+    color: #94617e;
+    line-height: 2;
+}
+
+
+/* SECRET MESSAGE */
+
+.secret-message-panel {
+    position: relative;
+    max-width: 760px;
+    margin: 60px auto 0;
+    padding: 35px 25px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,.9);
+    border-radius: 32px;
+    background: linear-gradient(145deg,#fce9f5,#f0e8ff);
+    text-align: center;
+}
+
+.secret-message-panel::before {
+    content: "✦";
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    color: rgba(183,138,255,.3);
+    font-size: 110px;
+}
+
+.secret-message-panel::after {
+    content: "♡";
+    position: absolute;
+    bottom: -35px;
+    left: 20px;
+    color: rgba(246,83,156,.17);
+    font-size: 130px;
+}
+
+.secret-message-content {
+    position: relative;
+    z-index: 1;
+}
+
+.secret-message-icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.secret-message-panel h3 {
+    font-size: 1.45rem;
+    font-weight: 900;
+}
+
+.secret-message-panel p {
+    max-width: 510px;
+    min-height: 65px;
+    margin: 15px auto 20px;
+    color: #885975;
+    font-size: .98rem;
+    line-height: 2.2;
+}
+
+
+/* ACHIEVEMENTS */
+
+.achievement-row {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    gap: 15px;
+    max-width: 760px;
+    margin: 55px auto 0;
+}
+
+.achievement {
+    padding: 22px 12px;
+    border: 1px solid rgba(255,255,255,.9);
+    border-radius: 23px;
+    background: rgba(255,255,255,.75);
+    text-align: center;
+    opacity: .6;
+    filter: grayscale(.7);
+    transition: .3s ease;
+}
+
+.achievement.unlocked {
+    opacity: 1;
+    filter: none;
+    background: #fff2f8;
+    box-shadow: 0 12px 30px rgba(198,126,169,.1);
+}
+
+.achievement-icon {
+    display: block;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.achievement strong {
+    display: block;
+    font-size: .85rem;
+    font-weight: 900;
+}
+
+.achievement small {
+    display: block;
+    margin-top: 6px;
+    color: #a17491;
+    font-size: .75rem;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 760px) {
+    .gift-area {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .gift-card p {
+        min-height: auto;
+    }
+
+    .game-panel,
+    .quiz-panel {
+        padding: 23px 16px;
+    }
+
+    .lucky-hearts {
+        gap: 9px;
+    }
+
+    .lucky-heart {
+        min-height: 95px;
+        font-size: 33px;
+        border-radius: 20px;
+    }
+
+    .achievement-row {
+        grid-template-columns: 1fr;
+    }
+
+    .fun-section {
+        padding: 60px 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .gift-result.visible,
+    .lucky-heart.winner {
+        animation: none;
+    }
+}
+
+</style>
+
+
+<!-- ==========================================
+     FUN & SURPRISES SECTION
+========================================== -->
+
+<section class="fun-section" id="surprises">
+
+    <div class="container">
+
+        <div class="fun-heading">
+
+            <span class="fun-eyebrow">
+                🎁 اتاق سورپرایزهای کوچولو
+            </span>
+
+            <h2 class="fun-title">
+                آماده‌ای برای <span class="gradient-text">کشفشون؟</span>
+            </h2>
+
+            <p class="fun-description">
+                خانومی، اینجا هر جعبه یه سورپرایز داره
+                و هر بازی یه فرصت برای لبخند زدنه! 💗
+            </p>
+
+        </div>
+
+
+        <!-- GIFT BOXES -->
+
+        <div class="gift-area">
+
+            <article class="gift-card">
+
+                <span class="gift-number">GIFT 01</span>
+
+                <span class="gift-emoji">🎁</span>
+
+                <h3>جعبه‌ی قلب‌ها</h3>
+
+                <p>
+                    یه جعبه‌ی پر از قلب‌های صورتی
+                    و پیام‌های کوچولوی عاشقانه.
+                </p>
+
+                <button
+                    class="gift-open-button"
+                    type="button"
+                    data-gift="0"
+                >
+                    باز کردن هدیه 💗
+                </button>
+
+                <div
+                    class="gift-result"
+                    id="giftResult0"
+                    aria-live="polite"
+                ></div>
+
+            </article>
+
+
+            <article class="gift-card">
+
+                <span class="gift-number">GIFT 02</span>
+
+                <span class="gift-emoji">🧸</span>
+
+                <h3>خرس کوچولوی مهربون</h3>
+
+                <p>
+                    یه پیام بانمک از طرف خرس نگهبان
+                    دنیای کوچولوی ما.
+                </p>
+
+                <button
+                    class="gift-open-button"
+                    type="button"
+                    data-gift="1"
+                >
+                    دیدن خرس کوچولو 🧸
+                </button>
+
+                <div
+                    class="gift-result"
+                    id="giftResult1"
+                    aria-live="polite"
+                ></div>
+
+            </article>
+
+
+            <article class="gift-card">
+
+                <span class="gift-number">GIFT 03</span>
+
+                <span class="gift-emoji">🌷</span>
+
+                <h3>باغ گل‌های صورتی</h3>
+
+                <p>
+                    یه گل کوچولو با یه آرزوی قشنگ
+                    برای روزهای پیش رو.
+                </p>
+
+                <button
+                    class="gift-open-button"
+                    type="button"
+                    data-gift="2"
+                >
+                    شکوفا کردن گل 🌸
+                </button>
+
+                <div
+                    class="gift-result"
+                    id="giftResult2"
+                    aria-live="polite"
+                ></div>
+
+            </article>
+
+        </div>
+
+
+        <!-- LUCKY HEART GAME -->
+
+        <div class="game-panel" id="luckyHeartGame">
+
+            <div class="game-panel-header">
+
+                <h3>
+                    🎮 بازی قلب خوش‌شانس
+                </h3>
+
+                <p>
+                    یکی از قلب‌ها رو انتخاب کن!
+                    پشت هر کدوم یه پیام کوچولو مخفی شده.
+                </p>
+
+                <div class="game-score">
+                    🏆 امتیاز تو:
+                    <span id="luckyScore">0</span>
+                </div>
+
+            </div>
+
+
+            <div
+                class="lucky-hearts"
+                id="luckyHearts"
+            >
+
+                <button
+                    class="lucky-heart"
+                    type="button"
+                    data-heart="0"
+                    aria-label="انتخاب قلب اول"
+                >
+                    ♡
+                </button>
+
+                <button
+                    class="lucky-heart"
+                    type="button"
+                    data-heart="1"
+                    aria-label="انتخاب قلب دوم"
+                >
+                    ♡
+                </button>
+
+                <button
+                    class="lucky-heart"
+                    type="button"
+                    data-heart="2"
+                    aria-label="انتخاب قلب سوم"
+                >
+                    ♡
+                </button>
+
+                <button
+                    class="lucky-heart"
+                    type="button"
+                    data-heart="3"
+                    aria-label="انتخاب قلب چهارم"
+                >
+                    ♡
+                </button>
+
+                <button
+                    class="lucky-heart"
+                    type="button"
+                    data-heart="4"
+                    aria-label="انتخاب قلب پنجم"
+                >
+                    ♡
+                </button>
+
+                <button
+                    class="lucky-heart"
+                    type="button"
+                    data-heart="5"
+                    aria-label="انتخاب قلب ششم"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+
+            <div
+                class="game-result"
+                id="luckyResult"
+                aria-live="polite"
+            >
+                منتظر چی هستی؟ یه قلب انتخاب کن! 💖
+            </div>
+
+
+            <div class="game-controls">
+
+                <button
+                    class="game-button secondary"
+                    type="button"
+                    id="resetLuckyGame"
+                >
+                    🔄 دور جدید
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- COUPLE QUIZ -->
+
+        <div class="quiz-panel" id="coupleQuiz">
+
+            <div class="game-panel-header">
+
+                <h3>
+                    🧩 آزمون کوچولوی عشق
+                </h3>
+
+                <p>
+                    چند سؤال سرگرم‌کننده درباره‌ی شما دوتا!
+                    این آزمون فقط برای تفریحه و جواب غلطی نداره.
+                </p>
+
+            </div>
+
+
+            <div class="quiz-progress">
+
+                <div
+                    class="quiz-progress-bar"
+                    id="quizProgressBar"
+                ></div>
+
+            </div>
+
+
+            <div id="quizQuestionArea">
+
+                <div
+                    class="quiz-question-number"
+                    id="quizQuestionNumber"
+                >
+                    سؤال ۱ از ۵
+                </div>
+
+                <h4
+                    class="quiz-question"
+                    id="quizQuestion"
+                >
+                    کدوم رنگ بیشتر به دنیای این سایت میاد؟
+                </h4>
+
+                <div
+                    class="quiz-options"
+                    id="quizOptions"
+                >
+
+                    <button
+                        class="quiz-option"
+                        type="button"
+                        data-option="0"
+                    >
+                        صورتی و بنفش 🎀
+                    </button>
+
+                    <button
+                        class="quiz-option"
+                        type="button"
+                        data-option="1"
+                    >
+                        آبی و سبز 🌊
+                    </button>
+
+                    <button
+                        class="quiz-option"
+                        type="button"
+                        data-option="2"
+                    >
+                        مشکی و خاکستری 🌙
+                    </button>
+
+                    <button
+                        class="quiz-option"
+                        type="button"
+                        data-option="3"
+                    >
+                        زرد و نارنجی ☀️
+                    </button>
+
+                </div>
+
+                <div
+                    class="quiz-feedback"
+                    id="quizFeedback"
+                    aria-live="polite"
+                ></div>
+
+                <div class="game-controls">
+
+                    <button
+                        class="game-button"
+                        type="button"
+                        id="nextQuizButton"
+                        hidden
+                    >
+                        سؤال بعدی 💗
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="quiz-result-card"
+                id="quizFinalResult"
+                aria-live="polite"
+            >
+
+                <h4 id="quizFinalTitle">
+                    آفرین خانومی! 🎀
+                </h4>
+
+                <p id="quizFinalDescription"></p>
+
+                <div class="game-controls">
+
+                    <button
+                        class="game-button"
+                        type="button"
+                        id="restartQuizButton"
+                    >
+                        دوباره بازی کنیم 🔄
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- SECRET MESSAGE GENERATOR -->
+
+        <div class="secret-message-panel">
+
+            <div class="secret-message-content">
+
+                <div
+                    class="secret-message-icon"
+                    id="secretMessageIcon"
+                >
+                    💌
+                </div>
+
+                <h3>
+                    پیام مخفی برای خانومی
+                </h3>
+
+                <p
+                    id="secretMessageText"
+                    aria-live="polite"
+                >
+                    یه دکمه هست که با هر بار زدنش،
+                    یه پیام تازه برات ظاهر می‌شه! ✨
+                </p>
+
+                <button
+                    class="game-button"
+                    type="button"
+                    id="newSecretMessageButton"
+                >
+                    کشف پیام مخفی 💗
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ACHIEVEMENTS -->
+
+        <div class="fun-heading" style="margin-top:65px">
+
+            <span class="fun-eyebrow">
+                🏆 کلکسیون نشان‌ها
+            </span>
+
+            <h2 class="fun-title">
+                مدال‌های <span class="gradient-text">کوچولو</span>
+            </h2>
+
+            <p class="fun-description">
+                با کشف هدیه‌ها و بازی‌ها،
+                نشان‌های بامزه جمع کن.
+            </p>
+
+        </div>
+
+
+        <div class="achievement-row">
+
+            <div
+                class="achievement"
+                id="achievementGift"
+            >
+
+                <span class="achievement-icon">
+                    🎁
+                </span>
+
+                <strong>
+                    جعبه‌گشا
+                </strong>
+
+                <small>
+                    باز کردن اولین هدیه
+                </small>
+
+            </div>
+
+
+            <div
+                class="achievement"
+                id="achievementLucky"
+            >
+
+                <span class="achievement-icon">
+                    🍀
+                </span>
+
+                <strong>
+                    خوش‌شانس
+                </strong>
+
+                <small>
+                    بازی کردن با قلب‌ها
+                </small>
+
+            </div>
+
+
+            <div
+                class="achievement"
+                id="achievementQuiz"
+            >
+
+                <span class="achievement-icon">
+                    🧩
+                </span>
+
+                <strong>
+                    کنجکاو کوچولو
+                </strong>
+
+                <small>
+                    تکمیل آزمون سرگرمی
+                </small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<script>
+
+/* ==========================================
+   PART 4 — GAME ENGINE
+========================================== */
+
+(function () {
+    "use strict";
+
+    const $ = function (id) {
+        return document.getElementById(id);
+    };
+
+
+    /* ACHIEVEMENTS */
+
+    function unlockAchievement(id) {
+        const element = $(id);
+
+        if (element) {
+            element.classList.add("unlocked");
+        }
+    }
+
+
+    /* GIFT BOXES */
+
+    const gifts = [
+        {
+            emoji: "💗",
+            messages: [
+                "نسا جونم، یه عالمه قلب صورتی تقدیم تو! 💗",
+                "این جعبه پر از آرزوهای قشنگ و لبخندهای کوچولوئه! 🎀",
+                "امیدوارم امروزت پر از اتفاق‌های خوب باشه! 🌸",
+                "یه یادآوری کوچولو: لبخندت رو فراموش نکن! 💖"
+            ]
+        },
+        {
+            emoji: "🧸",
+            messages: [
+                "سلام خانومی! من خرس نگهبان لبخنداتم! 🧸",
+                "مأموریت امروز: پیدا کردن حداقل یه دلیل برای لبخند! 🌷",
+                "این خرس کوچولو برات یه بغل مجازی آورده! 🫂",
+                "خرسه می‌گه امروز با خودت مهربون باش! 💗"
+            ]
+        },
+        {
+            emoji: "🌸",
+            messages: [
+                "آرزوم اینه که روزهای قشنگ زیادی پیش روت باشه! 🌸",
+                "امیدوارم دلت همیشه پر از امید و آرامش باشه! 🌷",
+                "این گل کوچولو یادآور چیزهای قشنگ زندگیه! 🌺",
+                "برای خانومی یه باغ پر از شکوفه‌های صورتی! 🎀"
+            ]
+        }
+    ];
+
+    const openedGifts = new Set();
+
+    document.querySelectorAll("[data-gift]").forEach(
+        function (button) {
+            button.addEventListener("click", function () {
+                const index = Number(button.dataset.gift);
+                const gift = gifts[index];
+
+                if (!gift) {
+                    return;
+                }
+
+                const result = $("giftResult" + index);
+
+                if (!result) {
+                    return;
+                }
+
+                if (openedGifts.has(index)) {
+                    result.classList.toggle("visible");
+                    return;
+                }
+
+                openedGifts.add(index);
+
+                const message =
+                    gift.messages[
+                        Math.floor(
+                            Math.random() * gift.messages.length
+                        )
+                    ];
+
+                result.textContent =
+                    gift.emoji + " " + message;
+
+                result.classList.add("visible");
+
+                button.textContent = "هدیه باز شد 💖";
+
+                unlockAchievement("achievementGift");
+
+                if (
+                    window.NesaLoveEffects &&
+                    window.NesaLoveEffects.showToast
+                ) {
+                    window.NesaLoveEffects.showToast(
+                        "یه سورپرایز کوچولو پیدا شد! 🎁"
+                    );
+                }
+            });
+        }
+    );
+
+
+    /* LUCKY HEART GAME */
+
+    const luckyButtons = Array.from(
+        document.querySelectorAll(".lucky-heart")
+    );
+
+    let luckyTarget = Math.floor(Math.random() * 6);
+    let luckyAttempts = 0;
+    let luckyScore = 0;
+    let luckyRoundFinished = false;
+
+    const luckyMessages = [
+        "یه قلب پر از مهربونی پیدا کردی! 💗",
+        "این قلب یه آرزوی قشنگ برات داره! 🌸",
+        "این یکی مخصوص لحظه‌های شادته! 🎀",
+        "یه لبخند کوچولو بهت هدیه می‌دم! 🧸",
+        "این قلب می‌گه به خودت افتخار کن! 💖",
+        "یه قلب خوش‌شانس با یه پیام جادویی! ✨"
+    ];
+
+    function resetLuckyRound() {
+        luckyTarget = Math.floor(Math.random() * 6);
+
+        luckyAttempts = 0;
+
+        luckyRoundFinished = false;
+
+        luckyButtons.forEach(function (button) {
+            button.disabled = false;
+            button.classList.remove("selected", "winner");
+            button.textContent = "♡";
+        });
+
+        $("luckyResult").textContent =
+            "یه قلب انتخاب کن و پیامش رو کشف کن! 💖";
+    }
+
+    luckyButtons.forEach(function (button, index) {
+        button.addEventListener("click", function () {
+            if (luckyRoundFinished) {
+                return;
+            }
+
+            luckyAttempts++;
+
+            button.disabled = true;
+            button.classList.add("selected");
+
+            if (index === luckyTarget) {
+                luckyRoundFinished = true;
+
+                button.textContent = "💖";
+                button.classList.add("winner");
+
+                luckyScore += Math.max(
+                    1,
+                    4 - luckyAttempts
+                );
+
+                $("luckyScore").textContent =
+                    luckyScore.toLocaleString("en-US");
+
+                $("luckyResult").textContent =
+                    "آفرین! " +
+                    luckyMessages[
+                        Math.floor(
+                            Math.random() * luckyMessages.length
+                        )
+                    ] +
+                    " امتیاز این دور: " +
+                    Math.max(1, 4 - luckyAttempts);
+
+                luckyButtons.forEach(function (item) {
+                    item.disabled = true;
+                });
+
+                unlockAchievement("achievementLucky");
+
+            } else {
+                button.textContent = "🌸";
+
+                $("luckyResult").textContent =
+                    "این یکی نبود! یه قلب دیگه امتحان کن خانومی! 🎀";
+
+                if (luckyAttempts >= 5) {
+                    luckyRoundFinished = true;
+
+                    luckyButtons.forEach(function (item, i) {
+                        item.disabled = true;
+
+                        if (i === luckyTarget) {
+                            item.textContent = "💖";
+                            item.classList.add("winner");
+                        }
+                    });
+
+                    $("luckyResult").textContent =
+                        "قلب خوش‌شانس رو پیدا کردیم! " +
+                        luckyMessages[luckyTarget] +
+                        " دور بعدی رو امتحان کن! 💗";
+                }
+            }
+        });
+    });
+
+    $("resetLuckyGame").addEventListener(
+        "click",
+        resetLuckyRound
+    );
+
+
+    /* QUIZ */
+
+    const questions = [
+        {
+            question: "کدوم رنگ بیشتر به دنیای این سایت میاد؟",
+            options: [
+                "صورتی و بنفش 🎀",
+                "آبی و سبز 🌊",
+                "مشکی و خاکستری 🌙",
+                "زرد و نارنجی ☀️"
+            ],
+            feedback: [
+                "آفرین! رنگ‌های رؤیایی دنیای ما! 🎀",
+                "چه ترکیب قشنگی! 🌊",
+                "یه حال‌وهوای متفاوت و خاص! 🌙",
+                "پر از انرژی و نور! ☀️"
+            ]
+        },
+        {
+            question: "اگه یه هدیه‌ی کوچولو انتخاب کنی، کدومه؟",
+            options: [
+                "نامه‌ی دست‌نویس 💌",
+                "عروسک خرسی 🧸",
+                "باغ گل 🌸",
+                "جعبه‌ی پر از شکلات 🍫"
+            ],
+            feedback: [
+                "نامه‌ها می‌تونن کلی خاطره بسازن! 💌",
+                "خرس کوچولو همیشه بانمکه! 🧸",
+                "گل‌ها یه حس قشنگ دارن! 🌸",
+                "چه انتخاب خوشمزه‌ای! 🍫"
+            ]
+        },
+        {
+            question: "برای یه روز قشنگ، کدوم رو انتخاب می‌کنی؟",
+            options: [
+                "گپ زدن و خندیدن 😄",
+                "بازی کردن 🎮",
+                "دیدن یه فیلم خوب 🎬",
+                "پیاده‌روی و حرف زدن 🌷"
+            ],
+            feedback: [
+                "خنده‌های کوچولو، خاطرات بزرگ! 😄",
+                "وقت یه رقابت بامزه‌ست! 🎮",
+                "یه فیلم خوب همیشه می‌چسبه! 🎬",
+                "گاهی ساده‌ترین لحظه‌ها قشنگ‌ترینن! 🌷"
+            ]
+        },
+        {
+            question: "کدوم کلمه حس قشنگ‌تری داره؟",
+            options: [
+                "مهربونی 💗",
+                "اعتماد 🤝",
+                "لبخند 😊",
+                "آرامش 🌙"
+            ],
+            feedback: [
+                "مهربونی می‌تونه روز آدم رو بسازه! 💗",
+                "اعتماد با صداقت ساخته می‌شه! 🤝",
+                "یه لبخند کوچولو گاهی کافیه! 😊",
+                "آرامش یه هدیه‌ی ارزشمنده! 🌙"
+            ]
+        },
+        {
+            question: "اسم این دنیای کوچولو چیه؟",
+            options: [
+                "دنیای آرش و نسا 💞",
+                "سیاره‌ی مریخ 🚀",
+                "جنگل اسرارآمیز 🌳",
+                "قلعه‌ی اژدها 🐉"
+            ],
+            feedback: [
+                "درسته! رسیدی به پایان آزمون! 🏆",
+                "شاید یه روز یه سایت فضایی هم بسازیم! 🚀",
+                "چه جای ماجراجویانه‌ای! 🌳",
+                "اژدهاها هم می‌تونن بامزه باشن! 🐉"
+            ]
+        }
+    ];
+
+    let quizIndex = 0;
+    let quizAnswers = [];
+
+    function renderQuiz() {
+        const question = questions[quizIndex];
+
+        $("quizQuestionNumber").textContent =
+            "سؤال " +
+            (quizIndex + 1) +
+            " از " +
+            questions.length;
+
+        $("quizQuestion").textContent =
+            question.question;
+
+        $("quizProgressBar").style.width =
+            (quizIndex / questions.length * 100) + "%";
+
+        $("quizFeedback").textContent = "";
+
+        $("nextQuizButton").hidden = true;
+
+        const optionsArea = $("quizOptions");
+
+        optionsArea.replaceChildren();
+
+        question.options.forEach(function (option, index) {
+            const button = document.createElement("button");
+
+            button.type = "button";
+            button.className = "quiz-option";
+            button.textContent = option;
+
+            button.addEventListener("click", function () {
+                selectQuizAnswer(index);
+            });
+
+            optionsArea.appendChild(button);
+        });
+    }
+
+    function selectQuizAnswer(index) {
+        const question = questions[quizIndex];
+
+        const options =
+            $("quizOptions").querySelectorAll(
+                ".quiz-option"
+            );
+
+        options.forEach(function (button, optionIndex) {
+            button.disabled = true;
+
+            if (optionIndex === index) {
+                button.classList.add("correct");
+            }
+        });
+
+        quizAnswers.push(index);
+
+        $("quizFeedback").textContent =
+            question.feedback[index];
+
+        $("quizProgressBar").style.width =
+            ((quizIndex + 1) / questions.length * 100) + "%";
+
+        if (quizIndex === questions.length - 1) {
+            $("nextQuizButton").textContent =
+                "دیدن نتیجه 💖";
+        } else {
+            $("nextQuizButton").textContent =
+                "سؤال بعدی 💗";
+        }
+
+        $("nextQuizButton").hidden = false;
+    }
+
+    function showQuizResult() {
+        $("quizQuestionArea").hidden = true;
+
+        $("quizFinalResult").classList.add("visible");
+
+        $("quizFinalTitle").textContent =
+            "آزمون تموم شد! 🎀";
+
+        $("quizFinalDescription").textContent =
+            "تو به هر " +
+            quizAnswers.length +
+            " سؤال جواب دادی! " +
+            "این آزمون برای سرگرمی بود؛ " +
+            "مهم‌تر از همه، انتخاب‌های خودت و چیزهاییه " +
+            "که باعث می‌شن لبخند بزنی. 💗";
+
+        unlockAchievement("achievementQuiz");
+    }
+
+    $("nextQuizButton").addEventListener(
+        "click",
+        function () {
+            if (quizIndex < questions.length - 1) {
+                quizIndex++;
+                renderQuiz();
+            } else {
+                showQuizResult();
+            }
+        }
+    );
+
+    $("restartQuizButton").addEventListener(
+        "click",
+        function () {
+            quizIndex = 0;
+            quizAnswers = [];
+
+            $("quizQuestionArea").hidden = false;
+
+            $("quizFinalResult").classList.remove(
+                "visible"
+            );
+
+            renderQuiz();
+        }
+    );
+
+    renderQuiz();
+
+
+    /* SECRET MESSAGES */
+
+    const secretMessages = [
+        {
+            icon: "💌",
+            text: "نسا جونم، امیدوارم امروز یه اتفاق کوچولوی خوب غافلگیرت کنه!"
+        },
+        {
+            icon: "🌷",
+            text: "خانومی، لازم نیست هر روز عالی باشه؛ همین که یه قدم کوچولو برداری ارزشمنده."
+        },
+        {
+            icon: "🧸",
+            text: "پیام خرس نگهبان: با خودت همون‌قدر مهربون باش که با دوستات هستی!"
+        },
+        {
+            icon: "🌙",
+            text: "حتی روزهای معمولی هم می‌تونن یه خاطره‌ی قشنگ توی خودشون داشته باشن."
+        },
+        {
+            icon: "🎀",
+            text: "یه یادآوری کوچولو: تو حق داری استراحت کنی، بخندی و از لحظه‌های خوب لذت ببری."
+        },
+        {
+            icon: "💖",
+            text: "امیدوارم همیشه آدم‌هایی کنارت باشن که با احترام و مهربونی باهات رفتار کنن."
+        },
+        {
+            icon: "✨",
+            text: "گاهی یه پیام ساده، یه آهنگ خوب یا یه لبخند می‌تونه حال یه روز رو عوض کنه."
+        },
+        {
+            icon: "🌸",
+            text: "امروز هم می‌تونه شروع یه خاطره‌ی تازه باشه؛ یه خاطره‌ی کوچولو و قشنگ!"
+        },
+        {
+            icon: "🫶🏻",
+            text: "دوستی و رابطه‌ی قشنگ با توجه، صداقت، احترام و شنیدن حرف‌های هم ساخته می‌شه."
+        },
+        {
+            icon: "💗",
+            text: "این پیام کوچولو فقط برای اینه که چند ثانیه لبخند بزنی!"
+        }
+    ];
+
+    let lastSecretIndex = -1;
+
+    $("newSecretMessageButton").addEventListener(
+        "click",
+        function () {
+            let index;
+
+            do {
+                index = Math.floor(
+                    Math.random() * secretMessages.length
+                );
+            } while (
+                index === lastSecretIndex &&
+                secretMessages.length > 1
+            );
+
+            lastSecretIndex = index;
+
+            const message = secretMessages[index];
+
+            $("secretMessageIcon").textContent =
+                message.icon;
+
+            $("secretMessageText").textContent =
+                message.text;
+
+            if (
+                window.NesaLoveEffects &&
+                window.NesaLoveEffects.heartBurst
+            ) {
+                const rect =
+                    $("secretMessageIcon").getBoundingClientRect();
+
+                window.NesaLoveEffects.heartBurst(
+                    rect.left + rect.width / 2,
+                    rect.top + rect.height / 2
+                );
+            }
+        }
+    );
+
+})();
+
+</script>
+
+<!-- END OF PART 4 -->
+<!-- =========================================
+     PART 5: MEMORY GALLERY & SPECIAL EFFECTS
+     این بخش را قبل از تگ پایانی body قرار بده
+========================================= -->
+
+<style>
+/* ===== گالری خاطرات ===== */
+.memory-section {
+    width: min(100% - 28px, 1050px);
+    margin: 55px auto;
+    padding: 28px 18px;
+    border-radius: 28px;
+    background: linear-gradient(145deg, #fff0f6, #fce7f3, #fdf2f8);
+    box-shadow: 0 12px 35px rgba(190, 24, 93, .12);
+    text-align: center;
+    color: #831843;
+}
+
+.memory-section h2 {
+    font-size: clamp(25px, 5vw, 38px);
+    margin-bottom: 10px;
+}
+
+.memory-description {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    line-height: 2;
+    color: #9d174d;
+}
+
+.memory-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 18px;
+}
+
+.memory-card {
+    position: relative;
+    overflow: hidden;
+    min-height: 220px;
+    border-radius: 22px;
+    background: white;
+    border: 1px solid #fbcfe8;
+    box-shadow: 0 8px 22px rgba(157, 23, 77, .10);
+    transition: transform .3s, box-shadow .3s;
+}
+
+.memory-card:hover {
+    transform: translateY(-7px) rotate(-.5deg);
+    box-shadow: 0 15px 30px rgba(157, 23, 77, .18);
+}
+
+.memory-art {
+    min-height: 150px;
+    display: grid;
+    place-items: center;
+    font-size: 66px;
+    background:
+        radial-gradient(circle at 20% 20%, #fff 0 4%, transparent 5%),
+        linear-gradient(135deg, #fbcfe8, #f9a8d4, #fce7f3);
+}
+
+.memory-card:nth-child(2) .memory-art {
+    background: linear-gradient(135deg, #ddd6fe, #fbcfe8);
+}
+
+.memory-card:nth-child(3) .memory-art {
+    background: linear-gradient(135deg, #fecdd3, #fde68a);
+}
+
+.memory-card:nth-child(4) .memory-art {
+    background: linear-gradient(135deg, #bfdbfe, #fbcfe8);
+}
+
+.memory-card h3 {
+    margin: 13px 8px 5px;
+    font-size: 18px;
+}
+
+.memory-card p {
+    margin: 0 12px 17px;
+    font-size: 13px;
+    line-height: 1.9;
+    color: #9d174d;
+}
+
+.memory-edit-note {
+    margin-top: 22px;
+    padding: 13px;
+    border-radius: 15px;
+    background: rgba(255,255,255,.7);
+    font-size: 13px;
+    line-height: 2;
+}
+
+/* ===== دکمه‌های ویژه ===== */
+.special-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.special-btn {
+    border: none;
+    border-radius: 999px;
+    padding: 13px 20px;
+    background: linear-gradient(135deg, #ec4899, #be185d);
+    color: white;
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 7px 18px rgba(190,24,93,.2);
+    transition: transform .2s, filter .2s;
+}
+
+.special-btn:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.06);
+}
+
+.special-btn:active {
+    transform: scale(.97);
+}
+
+/* ===== جعبه موزیک ===== */
+.music-box {
+    width: min(100% - 28px, 750px);
+    margin: 35px auto;
+    padding: 25px 20px;
+    text-align: center;
+    border-radius: 26px;
+    background: linear-gradient(135deg, #fdf2f8, #fce7f3, #ede9fe);
+    border: 1px solid #fbcfe8;
+    color: #831843;
+}
+
+.music-disc {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto 18px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 38px;
+    background: radial-gradient(circle, #fff 0 12%, #f9a8d4 13% 25%, #be185d 26% 100%);
+    box-shadow: 0 8px 25px #f9a8d455;
+}
+
+.music-disc.playing {
+    animation: spinRecord 4s linear infinite;
+}
+
+@keyframes spinRecord {
+    to { transform: rotate(360deg); }
+}
+
+.music-box p {
+    line-height: 2;
+}
+
+.music-box input {
+    display: block;
+    width: min(100%, 330px);
+    margin: 12px auto;
+    padding: 10px;
+    border: 1px solid #f9a8d4;
+    border-radius: 12px;
+    background: white;
+    color: #831843;
+}
+
+/* ===== پنل شخصی‌سازی ===== */
+.custom-box {
+    width: min(100% - 28px, 750px);
+    margin: 35px auto;
+    padding: 25px 20px;
+    border-radius: 26px;
+    background: #fff;
+    border: 1px solid #fbcfe8;
+    box-shadow: 0 10px 30px rgba(190,24,93,.09);
+    text-align: center;
+    color: #831843;
+}
+
+.custom-box label {
+    display: block;
+    margin: 15px auto 7px;
+}
+
+.custom-box input,
+.custom-box select {
+    width: min(100%, 330px);
+    padding: 11px;
+    border: 1px solid #f9a8d4;
+    border-radius: 12px;
+    background: #fff7fb;
+    font-family: inherit;
+    color: #831843;
+}
+
+.custom-box button {
+    margin-top: 17px;
+}
+
+.custom-preview {
+    margin-top: 18px;
+    padding: 15px;
+    border-radius: 16px;
+    background: #fdf2f8;
+    line-height: 2;
+    overflow-wrap: anywhere;
+}
+
+/* ===== افکت نورهای شناور ===== */
+.love-light {
+    position: fixed;
+    z-index: 9998;
+    pointer-events: none;
+    font-size: 20px;
+    animation: lightFloat 2.8s ease-out forwards;
+}
+
+@keyframes lightFloat {
+    0% {
+        opacity: 0;
+        transform: translateY(15px) scale(.5) rotate(0deg);
+    }
+    15% { opacity: 1; }
+    100% {
+        opacity: 0;
+        transform: translateY(-150px) scale(1.5) rotate(35deg);
+    }
+}
+
+@media (max-width: 500px) {
+    .memory-section { padding: 22px 13px; }
+    .memory-grid { grid-template-columns: 1fr; }
+    .memory-card { min-height: 190px; }
+}
+</style>
+
+
+<!-- ===== گالری خاطرات ===== -->
+<section class="memory-section" id="memoryGallery">
+    <h2>📸 گوشه‌ی کوچولوی خاطراتمون 💗</h2>
+
+    <p class="memory-description">
+        عشقم، بعضی لحظه‌ها شاید ساده باشن،
+        ولی وقتی یه نفر برات مهم باشه، همون لحظه‌های ساده هم قشنگ می‌شن.
+        این قسمت رو برای خاطرات قشنگمون گذاشتم. 🌷
+    </p>
+
+    <div class="memory-grid">
+
+        <article class="memory-card">
+            <div class="memory-art">💌</div>
+            <h3>اولین حرف‌ها</h3>
+            <p>شروع یه آشنایی که می‌تونه پر از خاطره‌های قشنگ باشه.</p>
+        </article>
+
+        <article class="memory-card">
+            <div class="memory-art">🌙</div>
+            <h3>حرف‌های شبونه</h3>
+            <p>از اون گفت‌وگوهایی که دوست داری زمان توشون زود نگذره.</p>
+        </article>
+
+        <article class="memory-card">
+            <div class="memory-art">🧸</div>
+            <h3>لحظه‌های شیرین</h3>
+            <p>خنده‌ها، شوخی‌ها و چیزهای کوچیکی که لبخند میارن.</p>
+        </article>
+
+        <article class="memory-card">
+            <div class="memory-art">💖</div>
+            <h3>پنج ماه کنار هم</h3>
+            <p>پنج ماه خاطره؛ و کلی فرصت برای ساختن لحظه‌های خوب دیگه.</p>
+        </article>
+
+    </div>
+
+    <div class="memory-edit-note">
+        ✨ این کارت‌ها فعلاً طرح‌های آماده هستن.
+        می‌تونی بعداً عکس‌ها و خاطرات واقعی خودتون رو جایگزینشون کنی.
+    </div>
+
+    <div class="special-buttons">
+        <button class="special-btn" onclick="createLoveLights()">
+            ✨ بارون نور برای خانومی
+        </button>
+
+        <button class="special-btn" onclick="showMemoryMessage()">
+            💌 یه پیام خاطره‌انگیز
+        </button>
+    </div>
+
+    <div id="memoryMessage"
+         class="custom-preview"
+         style="display:none">
+    </div>
+</section>
+
+
+<!-- ===== بخش موزیک ===== -->
+<section class="music-box" id="loveMusic">
+    <h2>🎵 آهنگ مخصوص لحظه‌های قشنگ</h2>
+
+    <div class="music-disc" id="musicDisc">🎶</div>
+
+    <p>
+        نسا جونم، اگه آهنگ موردعلاقه‌تون رو داری،
+        می‌تونی آدرس فایلش رو اینجا وارد کنی و پخشش کنی. 💕
+    </p>
+
+    <input
+        type="text"
+        id="musicSource"
+        placeholder="آدرس فایل آهنگ، مثلاً music.mp3"
+        aria-label="آدرس فایل موسیقی"
+    >
+
+    <audio id="loveAudio" controls preload="none" style="width:100%">
+        مرورگر شما از پخش صوت پشتیبانی نمی‌کند.
+    </audio>
+
+    <div class="special-buttons">
+        <button class="special-btn" onclick="loadLoveMusic()">
+            🎧 بارگذاری آهنگ
+        </button>
+
+        <button class="special-btn" onclick="toggleLoveMusic()">
+            ▶️ پخش / توقف
+        </button>
+    </div>
+
+    <p style="font-size:12px">
+        نکته: فایل آهنگ باید در دسترس باشه و اجازه‌ی استفاده ازش رو داشته باشی.
+    </p>
+</section>
+
+
+<!-- ===== پنل شخصی‌سازی ===== -->
+<section class="custom-box" id="customLove">
+    <h2>🎨 یه تغییر کوچولو برای سایت</h2>
+
+    <p>رفیق، اینجا می‌تونی اسم و پیام دلخواهت رو وارد کنی.</p>
+
+    <label for="customName">اسم دلخواه:</label>
+    <input
+        id="customName"
+        type="text"
+        maxlength="35"
+        placeholder="مثلاً نسا جونم"
+    >
+
+    <label for="customText">پیام اختصاصی:</label>
+    <input
+        id="customText"
+        type="text"
+        maxlength="180"
+        placeholder="مثلاً پنج ماه پر از خاطره..."
+    >
+
+    <label for="customTheme">تم سایت:</label>
+    <select id="customTheme">
+        <option value="pink">صورتی عاشقونه 💗</option>
+        <option value="purple">بنفش رؤیایی 💜</option>
+        <option value="blue">آبی آروم 💙</option>
+    </select>
+
+    <button class="special-btn" onclick="applyLoveCustomization()">
+        💖 اعمال تغییرات
+    </button>
+
+    <div id="customPreview" class="custom-preview">
+        <strong>نسا جونم 💗</strong>
+        <br>
+        پنج ماه پر از خاطره‌های قشنگ!
+    </div>
+</section>
+
+
+<script>
+/* ===== پیام‌های خاطره‌انگیز ===== */
+const memoryMessages = [
+    "عشقم، قشنگی بعضی خاطره‌ها به آدمیه که باهاشون شریک می‌شی. 💗",
+    "نسا جونم، امیدوارم کلی لحظه‌ی خوب و خنده‌ی قشنگ در انتظارمون باشه. 🌷",
+    "خانومی، پنج ماه گذشته و هنوز کلی خاطره‌ی تازه برای ساختن داریم. 💌",
+    "بعضی آدما با یه پیام کوچیک می‌تونن روز آدم رو قشنگ‌تر کنن. 💖",
+    "این صفحه کوچیکه، ولی برای تو با کلی ذوق ساخته شده. 🎀"
+];
+
+function showMemoryMessage() {
+    const box = document.getElementById("memoryMessage");
+    if (!box) return;
+
+    const message =
+        memoryMessages[Math.floor(Math.random() * memoryMessages.length)];
+
+    box.textContent = message;
+    box.style.display = "block";
+
+    if (typeof window.NesaLoveEffects !== "undefined" &&
+        typeof window.NesaLoveEffects.showToast === "function") {
+        window.NesaLoveEffects.showToast(message);
+    }
+}
+
+
+/* ===== افکت نورهای شناور ===== */
+function createLoveLights() {
+    const symbols = ["💗", "✨", "💕", "🌸", "💖", "⭐"];
+    const amount = 24;
+
+    for (let i = 0; i < amount; i++) {
+        setTimeout(() => {
+            const light = document.createElement("span");
+
+            light.className = "love-light";
+            light.textContent =
+                symbols[Math.floor(Math.random() * symbols.length)];
+
+            light.style.left = Math.random() * 94 + "vw";
+            light.style.top = (45 + Math.random() * 45) + "vh";
+
+            document.body.appendChild(light);
+
+            setTimeout(() => light.remove(), 3000);
+        }, i * 65);
+    }
+}
+
+
+/* ===== بارگذاری آهنگ ===== */
+function loadLoveMusic() {
+    const sourceInput = document.getElementById("musicSource");
+    const audio = document.getElementById("loveAudio");
+
+    if (!sourceInput || !audio) return;
+
+    const source = sourceInput.value.trim();
+
+    if (!source) {
+        alert("اول آدرس فایل آهنگ رو وارد کن رفیق! 🎵");
+        return;
+    }
+
+    audio.src = source;
+    audio.load();
+
+    alert("آهنگ بارگذاری شد! حالا روی پخش بزن. 💗");
+}
+
+
+/* ===== پخش و توقف آهنگ ===== */
+async function toggleLoveMusic() {
+    const audio = document.getElementById("loveAudio");
+    const disc = document.getElementById("musicDisc");
+
+    if (!audio || !audio.src) {
+        alert("اول آدرس آهنگ رو وارد کن و روی بارگذاری آهنگ بزن.");
+        return;
+    }
+
+    try {
+        if (audio.paused) {
+            await audio.play();
+
+            if (disc) disc.classList.add("playing");
+        } else {
+            audio.pause();
+
+            if (disc) disc.classList.remove("playing");
+        }
+    } catch (error) {
+        alert("پخش آهنگ انجام نشد؛ آدرس فایل رو بررسی کن.");
+    }
+}
+
+
+/* ===== هماهنگی چرخش صفحه با وضعیت آهنگ ===== */
+(function setupMusicEvents() {
+    const audio = document.getElementById("loveAudio");
+    const disc = document.getElementById("musicDisc");
+
+    if (!audio || !disc) return;
+
+    audio.addEventListener("play", () => {
+        disc.classList.add("playing");
+    });
+
+    audio.addEventListener("pause", () => {
+        disc.classList.remove("playing");
+    });
+
+    audio.addEventListener("ended", () => {
+        disc.classList.remove("playing");
+    });
+})();
+
+
+/* ===== شخصی‌سازی رنگ و پیام ===== */
+function applyLoveCustomization() {
+    const nameInput = document.getElementById("customName");
+    const textInput = document.getElementById("customText");
+    const themeInput = document.getElementById("customTheme");
+    const preview = document.getElementById("customPreview");
+
+    if (!nameInput || !textInput || !themeInput || !preview) return;
+
+    const name = nameInput.value.trim() || "نسا جونم";
+    const message =
+        textInput.value.trim() || "پنج ماه پر از خاطره‌های قشنگ!";
+    const theme = themeInput.value;
+
+    /*
+      از textContent استفاده شده تا متن واردشده
+      به‌عنوان کد HTML اجرا نشود.
+    */
+    preview.replaceChildren();
+
+    const title = document.createElement("strong");
+    title.textContent = name + " 💗";
+
+    const line = document.createElement("br");
+    const body = document.createElement("span");
+    body.textContent = message;
+
+    preview.append(title, line, body);
+
+    const themeColors = {
+        pink: {
+            background: "#fdf2f8",
+            color: "#831843",
+            border: "#f9a8d4"
+        },
+        purple: {
+            background: "#f3e8ff",
+            color: "#581c87",
+            border: "#d8b4fe"
+        },
+        blue: {
+            background: "#eff6ff",
+            color: "#1e3a8a",
+            border: "#93c5fd"
+        }
+    };
+
+    const selected = themeColors[theme] || themeColors.pink;
+
+    preview.style.backgroundColor = selected.background;
+    preview.style.color = selected.color;
+    preview.style.border = "1px solid " + selected.border;
+}
+
+
+/* ===== بازیابی افکت‌ها در صورت استفاده از آن‌ها ===== */
+document.addEventListener("visibilitychange", () => {
+    if (document.hidden) {
+        // هنگام رفتن از صفحه، هیچ افکت تازه‌ای ایجاد نمی‌شود.
+        return;
+    }
+});
+
+console.log("Part 5 loaded successfully 💗");
+</script>
+
+<!-- پایان بخش پنجم؛ تگ body را اینجا نبند.
+     تگ پایانی body و html باید در انتهای کل سایت باشند. -->
+     <!-- ==========================================
+     PART 6 OF 6
+     FINAL LOVE SURPRISE
+========================================== -->
+
+<style>
+/* ===== شمارشگر سالگرد ===== */
+
+.anniversary-final {
+    width: min(100% - 28px, 900px);
+    margin: 45px auto;
+    padding: 30px 18px;
+    border-radius: 30px;
+    text-align: center;
+    color: #831843;
+    background: linear-gradient(135deg, #fff1f7, #fce7f3, #f5d0fe);
+    box-shadow: 0 15px 40px rgba(190, 24, 93, .12);
+}
+
+.anniversary-final h2 {
+    font-size: clamp(25px, 5vw, 38px);
+    margin-bottom: 12px;
+}
+
+.anniversary-final p {
+    line-height: 2;
+}
+
+.anniversary-counter {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    max-width: 550px;
+    margin: 25px auto;
+}
+
+.counter-item {
+    padding: 20px 8px;
+    border: 1px solid #f9a8d4;
+    border-radius: 20px;
+    background: rgba(255,255,255,.78);
+}
+
+.counter-number {
+    display: block;
+    font-size: clamp(24px, 5vw, 36px);
+    font-weight: bold;
+    color: #db2777;
+}
+
+.counter-label {
+    display: block;
+    margin-top: 7px;
+    font-size: 13px;
+}
+
+/* ===== نامه عاشقانه ===== */
+
+.final-letter {
+    width: min(100% - 28px, 800px);
+    margin: 40px auto;
+    text-align: center;
+    color: #831843;
+}
+
+.letter-envelope {
+    max-width: 650px;
+    margin: 20px auto;
+    padding: 25px 18px;
+    border: 1px solid #f9a8d4;
+    border-radius: 25px;
+    background: linear-gradient(145deg, #fff7fb, #fce7f3);
+    box-shadow: 0 12px 30px rgba(190, 24, 93, .10);
+}
+
+.letter-seal {
+    font-size: 65px;
+    margin: 10px;
+    transition: transform .4s;
+}
+
+.letter-envelope.open .letter-seal {
+    transform: scale(1.15) rotate(8deg);
+}
+
+.letter-content {
+    display: none;
+    padding: 22px;
+    margin-top: 20px;
+    border-radius: 18px;
+    background: rgba(255,255,255,.8);
+    text-align: right;
+    line-height: 2.3;
+    animation: letterAppear .6s ease;
+    overflow-wrap: anywhere;
+}
+
+.letter-envelope.open .letter-content {
+    display: block;
+}
+
+@keyframes letterAppear {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== دکمه سورپرایز ===== */
+
+.final-surprise {
+    width: min(100% - 28px, 900px);
+    margin: 45px auto;
+    padding: 35px 20px;
+    text-align: center;
+    border-radius: 30px;
+    color: white;
+    background: linear-gradient(135deg, #be185d, #db2777, #9333ea);
+    box-shadow: 0 15px 40px rgba(157, 23, 77, .23);
+}
+
+.final-surprise h2 {
+    font-size: clamp(26px, 5vw, 40px);
+}
+
+.final-surprise p {
+    line-height: 2.2;
+}
+
+.final-surprise button {
+    margin-top: 15px;
+    padding: 15px 24px;
+    border: none;
+    border-radius: 999px;
+    color: #9d174d;
+    background: white;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.final-surprise button:hover {
+    transform: translateY(-3px) scale(1.02);
+}
+
+.final-surprise button:active {
+    transform: scale(.97);
+}
+
+.final-message {
+    display: none;
+    max-width: 650px;
+    margin: 25px auto 0;
+    padding: 22px;
+    border-radius: 22px;
+    background: rgba(255,255,255,.15);
+    border: 1px solid rgba(255,255,255,.3);
+    line-height: 2.4;
+    animation: letterAppear .7s ease;
+}
+
+/* ===== نوار پایانی ===== */
+
+.love-footer {
+    padding: 30px 15px;
+    text-align: center;
+    color: #9d174d;
+    line-height: 2.2;
+    background: linear-gradient(135deg, #fff1f7, #fce7f3);
+}
+
+.love-footer .footer-heart {
+    font-size: 30px;
+}
+
+/* ===== برگشت به بالا ===== */
+
+.back-to-top {
+    position: fixed;
+    left: 18px;
+    bottom: 20px;
+    z-index: 9997;
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    background: #db2777;
+    box-shadow: 0 5px 20px rgba(190,24,93,.3);
+    font-size: 22px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition: opacity .25s, transform .25s;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+/* ===== افکت قلب ===== */
+
+.final-floating-heart {
+    position: fixed;
+    z-index: 9999;
+    pointer-events: none;
+    bottom: -40px;
+    animation: finalHeartRise linear forwards;
+}
+
+@keyframes finalHeartRise {
+    0% {
+        transform: translateY(0) rotate(0deg) scale(.6);
+        opacity: 0;
+    }
+    15% {
+        opacity: .95;
+    }
+    100% {
+        transform: translateY(-110vh) rotate(360deg) scale(1.3);
+        opacity: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .anniversary-counter {
+        gap: 7px;
+    }
+
+    .counter-item {
+        padding: 15px 4px;
+    }
+
+    .counter-label {
+        font-size: 11px;
+    }
+
+    .letter-content {
+        padding: 15px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .final-floating-heart,
+    .letter-content {
+        animation-duration: .01ms !important;
+    }
+}
+</style>
+
+
+<!-- ===== شمارشگر پنج ماه ===== -->
+
+<section class="anniversary-final" id="anniversaryFinal">
+    <h2>💗 پنج ماه خاطره، پنج ماه لبخند 💗</h2>
+
+    <p>
+        نسا جونم، این صفحه یه بهونه‌ست برای اینکه بگم
+        بعضی لحظه‌ها وقتی با آدم مهم زندگیت شریک می‌شی،
+        قشنگ‌تر می‌شن. 🌷
+    </p>
+
+    <div class="anniversary-counter">
+        <div class="counter-item">
+            <span class="counter-number" id="counterMonths">۵</span>
+            <span class="counter-label">ماه کنار هم 💕</span>
+        </div>
+
+        <div class="counter-item">
+            <span class="counter-number" id="counterDays">۱۵۰</span>
+            <span class="counter-label">روز تقریبی خاطره 🌸</span>
+        </div>
+
+        <div class="counter-item">
+            <span class="counter-number">∞</span>
+            <span class="counter-label">آرزوهای قشنگ ✨</span>
+        </div>
+    </div>
+
+    <p style="font-size:13px">
+        شمارشگر بالا فعلاً نمونه است؛ تاریخ شروع رو در تنظیمات زیر وارد کن
+        تا تعداد ماه‌ها و روزها محاسبه بشه.
+    </p>
+</section>
+
+
+<!-- ===== نامه اختصاصی ===== -->
+
+<section class="final-letter" id="finalLetter">
+    <h2>💌 یه نامه کوچولو برای خانومی</h2>
+
+    <div class="letter-envelope" id="letterEnvelope">
+        <div class="letter-seal">💌</div>
+
+        <h3>برای نسا جونم، با کلی ذوق ❤️</h3>
+
+        <p>
+            یه نامه هست که فقط با یه کلیک می‌تونی بخونیش...
+        </p>
+
+        <button
+            class="special-btn"
+            type="button"
+            onclick="toggleFinalLetter()"
+        >
+            💖 باز کردن نامه
+        </button>
+
+        <div class="letter-content">
+            <h3>عشقم، نسا جونم... 💗</h3>
+
+            <p>
+                پنج ماه گذشت و من خواستم برای این مناسبت یه چیز متفاوت درست کنم؛
+                یه گوشه‌ی کوچیک توی اینترنت که پر از رنگ‌های قشنگ،
+                پیام‌های دوست‌داشتنی و سورپرایز باشه.
+            </p>
+
+            <p>
+                شاید این سایت یه عالمه کد داشته باشه،
+                ولی چیزی که قشنگش می‌کنه، ذوقیه که براش گذاشتم.
+                امیدوارم وقتی بازش می‌کنی، لبخند بیاد روی لبت. 🌷
+            </p>
+
+            <p>
+                امیدوارم روزهای پیش رومون پر از احترام،
+                حرف‌های خوب، خنده‌های واقعی و خاطرات شیرین باشه.
+            </p>
+
+            <p style="text-align:center;font-size:21px">
+                پنج‌ماهگیمون مبارک، خانومی! 💕🎀
+            </p>
+
+            <p style="text-align:left">
+                با کلی ذوق،<br>
+                آرش 💌
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ===== سورپرایز نهایی ===== -->
+
+<section class="final-surprise" id="ultimateSurprise">
+    <div style="font-size:55px">🎁💗🎀</div>
+
+    <h2>یه سوپرایزی دارم برات!</h2>
+
+    <p>
+        خانومی، آماده‌ای آخرین سورپرایز این صفحه رو ببینی؟ ✨
+    </p>
+
+    <button type="button" onclick="openUltimateSurprise()">
+        🎀 سورپرایزمو نشون بده!
+    </button>
+
+    <div class="final-message" id="ultimateMessage">
+        <div style="font-size:45px">💖🌸💖</div>
+
+        <h3>نسا جونم، پنج‌ماهگیمون مبارک! 💗</h3>
+
+        <p>
+            این سایت رو با کلی ذوق درست کردم تا یه یادگاری کوچیک
+            از این روز داشته باشیم.
+        </p>
+
+        <p>
+            امیدوارم لبخندت قشنگ‌تر بشه و روزهای خوبی پیش روت باشه.
+            ممنون که این سورپرایز کوچولو رو دیدی، عشقم! 🧸💕
+        </p>
+
+        <p style="font-size:22px">
+            💌 از طرف آرش، برای خانومی 💌
+        </p>
+
+        <button type="button" onclick="createFinalHearts()">
+            💗 یه عالمه قلب!
+        </button>
+    </div>
+</section>
+
+
+<!-- ===== تنظیم تاریخ شروع رابطه ===== -->
+
+<section class="custom-box" id="anniversarySettings">
+    <h2>📅 تنظیم تاریخ پنج‌ماهگیمون</h2>
+
+    <p>
+        تاریخ شروع رو وارد کن تا شمارشگر بر اساس تاریخ واقعی حساب کنه.
+    </p>
+
+    <label for="relationshipStart">تاریخ شروع:</label>
+
+    <input
+        type="date"
+        id="relationshipStart"
+        aria-label="تاریخ شروع رابطه"
+    >
+
+    <button
+        type="button"
+        class="special-btn"
+        onclick="updateAnniversaryCounter()"
+    >
+        💖 به‌روزرسانی شمارشگر
+    </button>
+
+    <div
+        id="anniversaryResult"
+        class="custom-preview"
+        aria-live="polite"
+    >
+        هنوز تاریخ شروع وارد نشده.
+    </div>
+</section>
+
+
+<!-- ===== پابرگ سایت ===== -->
+
+<footer class="love-footer">
+    <div class="footer-heart">💗</div>
+
+    <strong>ساخته‌شده با کلی ذوق برای نسا جونم</strong>
+
+    <p>
+        پنج ماه خاطره، یه عالمه لبخند و کلی آرزوی قشنگ. 🌷
+    </p>
+
+    <small>
+        یه یادگاری کوچیک از طرف آرش ❤️
+    </small>
+</footer>
+
+
+<!-- ===== دکمه برگشت به بالا ===== -->
+
+<button
+    class="back-to-top"
+    id="backToTop"
+    type="button"
+    aria-label="بازگشت به بالای صفحه"
+    onclick="window.scrollTo({top:0,behavior:'smooth'})"
+>
+    ↑
+</button>
+
+
+<script>
+/* ========================================
+   FINAL SITE INTERACTIONS
+======================================== */
+
+/* ===== باز و بسته کردن نامه ===== */
+
+function toggleFinalLetter() {
+    const envelope = document.getElementById("letterEnvelope");
+
+    if (!envelope) return;
+
+    envelope.classList.toggle("open");
+
+    const button = envelope.querySelector("button");
+
+    if (button) {
+        button.textContent = envelope.classList.contains("open")
+            ? "💌 بستن نامه"
+            : "💖 باز کردن نامه";
+    }
+}
+
+
+/* ===== سورپرایز نهایی ===== */
+
+function openUltimateSurprise() {
+    const message = document.getElementById("ultimateMessage");
+
+    if (!message) return;
+
+    message.style.display = "block";
+
+    createFinalHearts();
+
+    message.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest"
+    });
+
+    try {
+        localStorage.setItem("nesaSurpriseOpened", "yes");
+    } catch (error) {
+        // سایت بدون ذخیره‌سازی هم قابل استفاده است.
+    }
+}
+
+
+/* ===== قلب‌های شناور ===== */
+
+function createFinalHearts() {
+    const symbols = ["💗", "💖", "💕", "❤️", "💘", "🌸"];
+    const amount = 28;
+
+    for (let i = 0; i < amount; i++) {
+        setTimeout(() => {
+            const heart = document.createElement("span");
+
+            heart.className = "final-floating-heart";
+            heart.textContent =
+                symbols[Math.floor(Math.random() * symbols.length)];
+
+            heart.style.left = Math.random() * 96 + "vw";
+            heart.style.fontSize = (16 + Math.random() * 23) + "px";
+            heart.style.animationDuration = (3 + Math.random() * 3) + "s";
+
+            document.body.appendChild(heart);
+
+            setTimeout(() => {
+                heart.remove();
+            }, 6500);
+        }, i * 65);
+    }
+}
+
+
+/* ===== دکمه برگشت به بالا ===== */
+
+(function setupBackToTop() {
+    const button = document.getElementById("backToTop");
+
+    if (!button) return;
+
+    function updateButton() {
+        button.classList.toggle("visible", window.scrollY > 350);
+    }
+
+    window.addEventListener("scroll", updateButton, {
+        passive: true
+    });
+
+    updateButton();
+})();
+
+
+/* ===== شمارشگر تاریخ ===== */
+
+function updateAnniversaryCounter() {
+    const input = document.getElementById("relationshipStart");
+    const result = document.getElementById("anniversaryResult");
+
+    if (!input || !result) return;
+
+    if (!input.value) {
+        result.textContent = "اول تاریخ شروع رو انتخاب کن رفیق! 💗";
+        return;
+    }
+
+    // تاریخ انتخاب‌شده را به‌صورت محلی می‌خوانیم.
+    const parts = input.value.split("-").map(Number);
+
+    const start = new Date(
+        parts[0],
+        parts[1] - 1,
+        parts[2],
+        12, 0, 0
+    );
+
+    const now = new Date();
+
+    const today = new Date(
+        now.getFullYear(),
+        now.getMonth(),
+        now.getDate(),
+        12, 0, 0
+    );
+
+    if (Number.isNaN(start.getTime())) {
+        result.textContent = "تاریخ واردشده معتبر نیست.";
+        return;
+    }
+
+    if (start > today) {
+        result.textContent = "تاریخ شروع نمی‌تونه در آینده باشه.";
+        return;
+    }
+
+    let months =
+        (today.getFullYear() - start.getFullYear()) * 12
+        + today.getMonth()
+        - start.getMonth();
+
+    const anniversaryThisMonth = new Date(
+        start.getFullYear(),
+        start.getMonth() + months,
+        start.getDate(),
+        12, 0, 0
+    );
+
+    if (anniversaryThisMonth > today) {
+        months--;
+    }
+
+    const days = Math.floor(
+        (today.getTime() - start.getTime()) / 86400000
+    );
+
+    const monthsElement = document.getElementById("counterMonths");
+    const daysElement = document.getElementById("counterDays");
+
+    if (monthsElement) {
+        monthsElement.textContent = Math.max(0, months);
+    }
+
+    if (daysElement) {
+        daysElement.textContent = days;
+    }
+
+    result.textContent =
+        "از تاریخ شروع انتخاب‌شده تا امروز " +
+        months +
+        " ماه کامل و " +
+        days +
+        " روز گذشته. 💗";
+
+    try {
+        localStorage.setItem("relationshipStartDate", input.value);
+    } catch (error) {
+        // در صورت غیرفعال بودن ذخیره‌سازی، شمارشگر همچنان کار می‌کند.
+    }
+}
+
+
+/* ===== بازیابی تاریخ ذخیره‌شده ===== */
+
+(function restoreAnniversaryDate() {
+    const input = document.getElementById("relationshipStart");
+
+    if (!input) return;
+
+    try {
+        const savedDate = localStorage.getItem("relationshipStartDate");
+
+        if (savedDate) {
+            input.value = savedDate;
+            updateAnniversaryCounter();
+        }
+    } catch (error) {
+        // استفاده از سایت بدون localStorage هم امکان‌پذیر است.
+    }
+})();
+
+
+/* ===== ثبت اجرای موفق بخش نهایی ===== */
+
+console.log("Final surprise section loaded successfully! 💗");
+</script>
+
+<!-- پایان بخش ششم -->
+
+</body>
+</html>
